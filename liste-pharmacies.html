@@ -99,6 +99,28 @@
             line-height: 1.5;
         }
 
+        /* ─── Résultats pharmacies ─── */
+        .pharmacies-results {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .results-header h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-black);
+        }
+
         .pharmacy-card__city {
             display: inline-flex;
             align-items: center;
@@ -243,14 +265,19 @@
             >
         </div>
         <p class="search-counter">
-            <strong id="resultCount">250</strong> pharmacies partenaires dans toute la France
+            <strong id="totalCount">250</strong> pharmacies partenaires dans toute la France
         </p>
     </div>
 
-    <!-- Grille des pharmacies -->
+    <!-- Résultats de recherche -->
     <main>
-        <div class="pharmacies-grid" id="pharmaciesGrid">
-            <!-- Les cartes sont générées par JavaScript -->
+        <div class="pharmacies-results" id="pharmaciesResults">
+            <div class="results-header">
+                <h2 id="resultsTitle">Pharmacies trouvées <span id="resultsCount" style="color: var(--color-primary);">(6)</span></h2>
+            </div>
+            <div class="pharmacies-grid" id="pharmaciesGrid">
+                <!-- Les cartes sont générées par JavaScript -->
+            </div>
         </div>
     </main>
 
@@ -345,8 +372,8 @@
         // ─── Rendu des cartes ───
         function renderPharmacies(list) {
             const grid = document.getElementById('pharmaciesGrid');
-            const counter = document.getElementById('resultCount');
-            counter.textContent = list.length;
+            const counter = document.getElementById('resultsCount');
+            if (counter) counter.textContent = `(${list.length})`;
 
             if (list.length === 0) {
                 grid.innerHTML = `
@@ -377,23 +404,39 @@
             `).join('');
         }
 
+        // ─── Variables globales ───
+        const pharmaciesResults = document.getElementById('pharmaciesResults');
+        const resultsTitle = document.getElementById('resultsTitle');
+        const searchInput = document.getElementById('searchInput');
+        const totalCount = document.getElementById('totalCount');
+        
+        // Met à jour le compteur total
+        totalCount.textContent = pharmacies.length;
+
         // ─── Filtrage en temps réel ───
-        document.getElementById('searchInput').addEventListener('input', function () {
+        searchInput.addEventListener('input', function () {
             const query = this.value.toLowerCase().trim();
+            
             const filtered = pharmacies.filter(p =>
                 p.name.toLowerCase().includes(query) ||
                 p.city.toLowerCase().includes(query) ||
                 p.dept.includes(query) ||
                 p.address.toLowerCase().includes(query)
             );
+            
             renderPharmacies(filtered);
+            
+            // Affiche les résultats si recherche active
+            if (query.length > 0) {
+                pharmaciesResults.style.display = 'block';
+                resultsTitle.innerHTML = `Résultats pour "${this.value}" <span id="resultsCount" style="color: var(--color-primary);">(${filtered.length})</span>`;
+            } else {
+                pharmaciesResults.style.display = 'none';
+            }
         });
 
-        // Rendu initial
-        renderPharmacies(pharmacies);
+        // ─── Rendu initial (aucune pharmacie affichée par défaut) ───
+        pharmaciesResults.style.display = 'none';
     </script>
-
 </body>
-
 </html>
-

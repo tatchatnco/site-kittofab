@@ -228,18 +228,20 @@
     <!-- Search Bar -->
     <div class="search-section">
         <div class="search-bar">
-            <input type="text" id="searchInput" class="search-bar__input" placeholder="Buscar por ciudad, nombre de farmacia o departamento...">
-            <button class="btn btn--primary" onclick="searchPharmacies()">Buscar</button>
+            <input type="text" id="searchInput" class="search-bar__input" placeholder="🔍 Buscar por ciudad, nombre de farmacia o departamento..." autocomplete="off">
         </div>
         <p class="search-counter">
-            <strong id="resultCount">250</strong> farmacias socias en toda Francia
+            <strong id="totalCount">6</strong> farmacias socias en toda Francia
         </p>
     </div>
 
-    <!-- Pharmacy List -->
-    <section class="section section--light">
+    <!-- Pharmacy List (hidden by default) -->
+    <section class="section section--light" id="pharmaciesResults" style="display: none;">
+        <div class="results-header" style="max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem 1rem;">
+            <h2 id="resultsTitle" style="font-size: 1.25rem; color: var(--color-black);">Resultados <span id="resultsCount" style="color: var(--color-primary);">(0)</span></h2>
+        </div>
         <div class="pharmacies-grid" id="pharmaciesGrid">
-            <!-- Les cartes sont générées par JavaScript -->
+            <!-- Las cartas se generan con JavaScript -->
         </div>
     </section>
 
@@ -328,35 +330,33 @@
             { name: "Pharmacie Centrale", address: "15 rue Nationale", city: "Lille", dept: "59" },
         ];
 
-        function displayPharmacies(pharmaciesToShow) {
-            const container = document.getElementById('pharmaciesGrid');
-            const counter = document.getElementById('resultCount');
-            
-            if (pharmaciesToShow.length === 0) {
-                container.innerHTML = `
+        // ─── Función para mostrar farmacias ───
+        function renderPharmacies(list) {
+            const grid = document.getElementById('pharmaciesGrid');
+            const counter = document.getElementById('resultsCount');
+            if (counter) counter.textContent = `(${list.length})`;
+
+            if (list.length === 0) {
+                grid.innerHTML = `
                     <div class="no-results">
                         <div class="no-results__icon">🔍</div>
                         <h3 class="no-results__title">Sin resultados</h3>
-                        <p>No se encontraron farmacias que coincidan con tu búsqueda.<br>
-                        Intenta con otra ciudad o departamento.</p>
+                        <p>No se encontraron farmacias que coincidan con tu búsqueda.<br>Intenta con otra ciudad o departamento.</p>
                     </div>
                 `;
-                counter.textContent = '0 farmacia encontrada';
                 return;
             }
-            
-            counter.textContent = `${pharmaciesToShow.length} farmacia(s) encontrada(s)`;
-            
-            container.innerHTML = pharmaciesToShow.map(pharma => `
+
+            grid.innerHTML = list.map(p => `
                 <div class="pharmacy-card">
-                    <div class="pharmacy-card__name">${pharma.name}</div>
-                    <div class="pharmacy-card__address">${pharma.address}</div>
+                    <div class="pharmacy-card__name">${p.name}</div>
+                    <div class="pharmacy-card__address">${p.address}</div>
                     <div>
-                        <span class="pharmacy-card__city">${pharma.city}</span>
-                        <span class="pharmacy-card__dept">${pharma.dept}</span>
+                        <span class="pharmacy-card__city">${p.city}</span>
+                        <span class="pharmacy-card__dept">${p.dept}</span>
                     </div>
                     <div class="pharmacy-card__actions">
-                        <a href="${generateGoogleMapsLink(pharma.name, pharma.address, pharma.city, pharma.dept)}" target="_blank" class="btn-maps">
+                        <a href="${generateGoogleMapsLink(p.name, p.address, p.city, p.dept)}" target="_blank" class="btn-maps">
                             📍 Ver en Google Maps
                         </a>
                     </div>
@@ -364,28 +364,33 @@
             `).join('');
         }
 
-        function searchPharmacies() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+        // ─── Filtrado en tiempo real ───
+        const searchInput = document.getElementById('searchInput');
+        const resultsSection = document.getElementById('pharmaciesResults');
+        const resultsTitle = document.getElementById('resultsTitle');
+        
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
             
-            if (!searchTerm) {
-                displayPharmacies(pharmacies);
-                return;
-            }
-            
-            const filtered = pharmacies.filter(p => 
-                p.name.toLowerCase().includes(searchTerm) ||
-                p.city.toLowerCase().includes(searchTerm) ||
-                p.dept.includes(searchTerm) ||
-                p.address.toLowerCase().includes(searchTerm)
+            const filtered = pharmacies.filter(p =>
+                p.name.toLowerCase().includes(query) ||
+                p.city.toLowerCase().includes(query) ||
+                p.dept.includes(query) ||
+                p.address.toLowerCase().includes(query)
             );
             
-            displayPharmacies(filtered);
-        }
+            renderPharmacies(filtered);
+            
+            if (query.length > 0) {
+                resultsSection.style.display = 'block';
+                resultsTitle.innerHTML = `Resultados para "${this.value}" <span id="resultsCount" style="color: var(--color-primary);">(${filtered.length})</span>`;
+            } else {
+                resultsSection.style.display = 'none';
+            }
+        });
 
-        document.getElementById('searchInput').addEventListener('input', searchPharmacies);
-        
-        // Rendu initial
-        displayPharmacies(pharmacies);
+        // ─── Estado inicial (ninguna farmacia mostrada por defecto) ───
+        resultsSection.style.display = 'none';
     </script>
 </body>
 </html>
