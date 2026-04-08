@@ -63,6 +63,42 @@
                     de
                     la protection sans adhésif.</p>
             </div>
+
+            <!-- Graphique CGM à barres -->
+            <div class="cgm-chart reveal reveal-delay-2" style="margin: 3rem auto; max-width: 800px; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border-radius: var(--radius-lg); padding: 2rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                <div class="chart-bars" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <!-- Barre Europe -->
+                    <div class="chart-row" style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 1.5rem; min-width: 40px;">🇪🇺</span>
+                        <div class="bar-container" style="flex: 1; background: var(--color-gray-200); border-radius: var(--radius-pill); height: 40px; overflow: hidden; position: relative;">
+                            <div class="bar-fill" data-width="75" style="height: 100%; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); border-radius: var(--radius-pill); width: 0; transition: width 1800ms cubic-bezier(0.33, 1, 0.68, 1); display: flex; align-items: center; justify-content: flex-end; padding-right: 1rem;">
+                                <span style="color: white; font-weight: 700; font-size: 0.9rem;">+15%/an</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Barre France -->
+                    <div class="chart-row" style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 1.5rem; min-width: 40px;">🇫🇷</span>
+                        <div class="bar-container" style="flex: 1; background: var(--color-gray-200); border-radius: var(--radius-pill); height: 40px; overflow: hidden; position: relative;">
+                            <div class="bar-fill" data-width="85" style="height: 100%; background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%); border-radius: var(--radius-pill); width: 0; transition: width 1800ms cubic-bezier(0.33, 1, 0.68, 1); display: flex; align-items: center; justify-content: flex-end; padding-right: 1rem;">
+                                <span style="color: white; font-weight: 700; font-size: 0.9rem;">+10% à +16%/an</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Barre Marché FR -->
+                    <div class="chart-row" style="display: flex; align-items: center; gap: 1rem;">
+                        <span style="font-size: 1.5rem; min-width: 40px;">🇫🇷</span>
+                        <div class="bar-container" style="flex: 1; background: var(--color-gray-200); border-radius: var(--radius-pill); height: 40px; overflow: hidden; position: relative;">
+                            <div class="bar-fill" data-width="100" style="height: 100%; background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); border-radius: var(--radius-pill); width: 0; transition: width 1800ms cubic-bezier(0.33, 1, 0.68, 1); display: flex; align-items: center; justify-content: center;">
+                                <span style="color: white; font-weight: 700; font-size: 0.9rem;">450 M€ en 2026 → 650 M€ d'ici 2030</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="stats-banner reveal reveal-delay-3">
                 <div class="stat">
                     <div class="stat__number" data-count="250" data-suffix="+">0</div>
@@ -235,6 +271,28 @@
 
     <script src="js/main.js"></script>
     <script>
+        // Animation des barres du graphique CGM (séquentielle)
+        document.addEventListener('DOMContentLoaded', function() {
+            const chartObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bars = entry.target.querySelectorAll('.bar-fill');
+                        const delays = [0, 100, 180]; // Délais précis: 0ms, 100ms, 180ms
+                        bars.forEach((bar, index) => {
+                            setTimeout(() => {
+                                const width = bar.getAttribute('data-width');
+                                bar.style.width = width + '%';
+                            }, delays[index]);
+                        });
+                        chartObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            const chart = document.querySelector('.cgm-chart');
+            if (chart) chartObserver.observe(chart);
+        });
+
         function changeLanguage(lang) {
             if (lang === 'fr') {
                 window.location.href = 'distributeurs.html';
