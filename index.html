@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KittOFab — GlycoSafe | Protection capteur glycémique sans adhésif</title>
+  <meta name="description"
+    content="GlycoSafe par KittOFab : la première protection sans colle pour capteurs de glucose. Hypoallergénique, réutilisable, disponible en pharmacie. Alternative patch diabète.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
+      </a>
+      <div class="nav__links" id="navLinks" style="gap:1rem;">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="produit.html">Produit</a>
+        <a href="pharmacies.html">Pharmacies</a>
+        <a href="distributeurs.html">Distributeurs</a>
+        <a href="mutuelles.html">Mutuelles</a>
+        <a href="produit.html#faq">FAQ</a>
+        <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Trouver une pharmacie</a>
+        <a href="pharmacies.html#produit-situation" class="nav__cta">Commander</a>
+      </div>
+      <div class="nav__lang" style="margin-left:0.5rem;">
+        <select id="langSelect" onchange="changeLanguage(this.value)">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero">
+    <span class="hero__eyebrow reveal">GlycoSafe par KittOFab</span>
+    <h1 class="hero__title reveal reveal-delay-1">
+      Protégez votre capteur.<br><span class="highlight">Sans aucune colle.</span>
+    </h1>
+    <p class="hero__subtitle reveal reveal-delay-2">
+      Le premier dispositif français en silicone hypoallergénique pour protéger votre capteur de glucose.<br>
+      Conçu pour ceux qui refusent de choisir entre confort et liberté.
+    </p>
+    <div class="hero__actions reveal reveal-delay-3">
+      <a href="produit.html" class="btn btn--primary">Découvrir GlycoSafe</a>
+    </div>
+    <img src="img/glycosafe-hero.jpg" alt="GlycoSafe bracelet protecteur de capteur glycémique — détail silicone"
+      class="hero__image reveal-scale">
+  </section>
+
+  <!-- ═══ Problématique ═══ -->
+  <section class="section section--dark">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__eyebrow reveal">Le constat</span>
+        <h2 class="section__title section__title--center reveal reveal-delay-1">
+          Les adhésifs montrent leurs limites.
+        </h2>
+        <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+          Des millions de patients subissent les contraintes des patchs traditionnels au quotidien.
+        </p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card reveal reveal-delay-1">
+          <div class="card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
+              <path d="M12 9v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+          <h3 class="card__title">Irritations cutanées</h3>
+          <p class="card__text">La colle agresse l'épiderme au fil des jours.<br>Rougeurs, démangeaisons, réactions
+            allergiques deviennent le quotidien.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+            </svg>
+          </div>
+          <h3 class="card__title">Perte sous l'eau</h3>
+          <p class="card__text">Douche, piscine, transpiration.<br>L'humidité compromet l'adhérence.<br>Le capteur se
+            décolle
+            au pire moment.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
+              <path
+                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+            </svg>
+          </div>
+          <h3 class="card__title">Usage unique et coûteux</h3>
+          <p class="card__text">Les sur-patchs adhésifs se jettent après chaque capteur.<br>Un coût récurrent qui
+            s'accumule mois après mois.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ La Solution ═══ -->
+  <section class="section section--light">
+    <div class="section__inner">
+      <div class="split">
+        <div class="split__content reveal" style="padding: 0 2rem;">
+          <span class="section__eyebrow">La solution</span>
+          <h2 class="section__title">GlycoSafe. Zéro colle. Protection totale.</h2>
+          <p>Un bracelet technique en silicone hypoallergénique avec bague adaptatrice brevetée.<br>Il épouse les
+            contours
+            du capteur pour le maintenir sans exercer de pression directe.<br>Pas d'effet garrot.</p>
+          <ul class="split__list">
+            <li>Silicone doux, BPA free, hypoallergénique</li>
+            <li>Bracelet en élasthane type Spandex</li>
+            <li>Waterproof et lavable</li>
+            <li>Réutilisable pendant plusieurs mois</li>
+            <li>Taille unique - 8 coloris disponibles</li>
+          </ul>
+          <a href="produit.html" class="btn btn--primary">En savoir plus</a>
+        </div>
+        <div class="split__content reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:1.5rem;align-items:center;justify-content:flex-start;">
+          <div class="split__image reveal-scale">
+            <img src="img/glycosafe-arm.jpg" alt="GlycoSafe bracelet protecteur porté sur le bras"
+              style="width:100%;max-width:350px;border-radius:var(--radius-xl);box-shadow:var(--shadow-elevated);">
+          </div>
+          <div class="split__image reveal-scale reveal-delay-2">
+            <img src="img/glycosafe-basketball.jpg" alt="Liberté de mouvement avec GlycoSafe pendant le sport"
+              style="width:100%;max-width:350px;border-radius:var(--radius-xl);box-shadow:var(--shadow-elevated);">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Marketing Visual & Counter ═══ -->
+  <section class="section section--dark" style="padding: 4rem 0; overflow:hidden; position:relative;">
+    <div class="section__inner" style="max-width: 960px; margin: 0 auto; text-align:center;">
+
+      <!-- Counter Block -->
+      <div class="counter-block reveal reveal-delay-1" style="margin-bottom: 2rem;">
+        <div class="counter-wrapper" style="position: relative; display: inline-block;">
+          <div class="counter-number" id="pharma-counter" style="font-size: 7rem; font-weight: 700; color: #e91e63; letter-spacing: -0.02em;">0</div>
+          <div class="counter-label" style="font-size: 2rem; color: #fff; font-weight: 600; margin-top: 1rem; text-shadow: 0 2px 10px rgba(233, 30, 99, 0.3);">Pharmacies partenaires en France</div>
+          <div class="counter-progress" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: rgba(255, 255, 255, 0.2); border-radius: 2px;"></div>
+        </div>
+        <p style="color: #ffffff; text-shadow: 0 0 15px rgba(0, 174, 239, 0.5); font-weight: 500; margin-top: 0.75rem; font-size: 1.4rem; line-height: 1.6;">Elles ont déjà adopté l'innovation GlycoSafe.<br>Leur choix. Votre garantie.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ 3 Bénéfices ═══ -->
+  <section class="section section--gray">
+    <div class="section__inner">
+      <div class="section__header">
+        <span class="section__eyebrow reveal">Pourquoi GlycoSafe</span>
+        <h2 class="section__title section__title--center reveal reveal-delay-1">Trois raisons de changer.</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="card reveal reveal-delay-1">
+          <div class="card__header">
+            <div class="card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <span class="section__number counter-number" data-target="1" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fff; letter-spacing: -0.02em; padding: 0.5rem 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3); position: relative; overflow: hidden;">0</span>
+          </div>
+          <h3 class="card__title">Zéro irritation</h3>
+          <p class="card__text">Protection capteur sans adhésif.<br>Aucune colle en contact avec votre peau.<br>Votre
+            épiderme respire librement.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card__header">
+            <div class="card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="section__number counter-number" data-target="2" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fff; letter-spacing: -0.02em; padding: 0.5rem 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(240, 87, 108, 0.3); position: relative; overflow: hidden;">0</span>
+          </div>
+          <h3 class="card__title">Maintien absolu</h3>
+          <p class="card__text">Maintien capteur sport, quotidien, travail, transpiration, eau, vêtements.<br>Testé et
+            Approuvé.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card__header">
+            <div class="card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
+                <path
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </div>
+            <span class="section__number counter-number" data-target="3" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fff; letter-spacing: -0.02em; padding: 0.5rem 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3); position: relative; overflow: hidden;">0</span>
+          </div>
+          <h3 class="card__title">Durable et économique</h3>
+          <p class="card__text">Réutilisable pendant des mois.<br>Un seul achat remplace des dizaines de patchs
+            jetables.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Détail Produit (full-bleed image) ═══ -->
+  <section class="section section--light" style="padding-bottom:0;">
+    <div class="section__inner" style="text-align:center;margin-bottom:3rem;">
+      <span class="section__eyebrow reveal">Conception premium</span>
+      <h2 class="section__title section__title--center reveal reveal-delay-1">Silicone de haute qualité.</h2>
+      <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+        Un silicone de haute qualité, conçu dans les moindres détails pour durer.<br>
+        La marque GlycoSafe est gravée directement dans la matière, signe indélébile d'authenticité et garantie contre
+        la contrefaçon.
+      </p>
+    </div>
+    <div class="gallery gallery--2 reveal-scale" style="padding-bottom:var(--space-section);">
+      <div class="gallery__item">
+        <img src="img/glycosafe-detail-dark.jpg" alt="GlycoSafe gros plan sur la bague adaptatrice en silicone bleu"
+          loading="lazy">
+      </div>
+      <div class="gallery__item">
+        <img src="img/glycosafe-detail-pink.jpg" alt="GlycoSafe gros plan sur la bague rose vif" loading="lazy">
+      </div>
+    </div>
+    <div style="height:var(--space-section)"></div>
+  </section>
+
+  <!-- ═══ Compatibilité ═══ -->
+  <section class="section section--light">
+    <div class="section__inner section__inner--narrow" style="text-align:center">
+      <span class="section__eyebrow reveal">Compatibilité</span>
+      <h2 class="section__title section__title--center reveal reveal-delay-1">Conçu pour vos capteurs.</h2>
+      <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+        Déjà compatible avec les capteurs les plus répandus,<br>
+        GlycoSafe a été pensé pour évoluer.<br>
+        Des bagues adaptatrices en cours de développement permettront bientôt d'accueillir les modèles de nouveaux
+        capteurs.
+      </p>
+      <div class="compat-grid reveal reveal-delay-3">
+        <div class="card--compat">
+          <h3 class="card--compat__title">FreeStyle Libre 2 ABBOTT</h3>
+        </div>
+        <div class="card--compat">
+          <h3 class="card--compat__title">FreeStyle Libre 2 Plus</h3>
+        </div>
+        <div class="card--compat">
+          <h3 class="card--compat__title">FreeStyle Libre Select ABBOTT</h3>
+        </div>
+        <div class="card--compat">
+          <h3 class="card--compat__title">Lingo OTC</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ Bloc Professionnels ═══ -->
+  <section class="section section--gradient">
+    <div class="section__inner" style="text-align:center">
+      <span class="section__eyebrow reveal">Professionnels de santé</span>
+      <h2 class="section__title section__title--center reveal reveal-delay-1"
+        style="max-width:700px;margin-left:auto;margin-right:auto">
+        Pharmacies. Distributeurs. Mutuelles.
+      </h2>
+      <p class="section__subtitle section__subtitle--center reveal reveal-delay-2" style="color:var(--color-gray-400)">
+        Rejoignez un réseau en pleine croissance.<br>Offrez à vos patients la seule alternative sans colle disponible en
+        officine.<br>Opportunité intéressante, produit innovant, marque française.
+      </p>
+      <div class="hero__actions reveal reveal-delay-3">
+        <a href="pharmacies.html" class="btn btn--white">Espace Pharmacies</a>
+        <a href="distributeurs.html" class="btn btn--outline" style="border-color:#fff;color:#fff">Devenir
+          Distributeur</a>
+        <a href="mutuelles.html" class="btn btn--outline" style="border-color:#fff;color:#fff">Offre Mutuelles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div style="display:inline-block; margin-bottom:1rem;">
+            <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
+          </div>
+          <p>Diabetes without complexes, for a life without limits. Innovation française pour la protection de capteurs
+            glycémiques.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Produit</div>
+          <a href="produit.html">GlycoSafe</a>
+          <a href="produit.html#faq">FAQ</a>
+          <a href="produit.html#compatibilite">Compatibilité</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Professionnels</div>
+          <a href="pharmacies.html">Pharmacies</a>
+          <a href="distributeurs.html">Distributeurs</a>
+          <a href="mutuelles.html">Mutuelles</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="https://www.kittofab.fr">www.kittofab.fr</a>
+        </div>
+      </div>
+      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+        <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
+        <span>Brevet européen en cours</span>
+        <span style="color:var(--color-gray-400);font-size:0.875rem;">© 2026 KittoFab. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    function changeLanguage(lang) {
+      if (lang === 'fr') {
+        window.location.href = 'index.html';
+      } else if (lang === 'en') {
+        window.location.href = 'en/index.html';
+      } else if (lang === 'es') {
+        window.location.href = 'es/index.html';
+      }
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counterElement = document.getElementById("pharma-counter");
+      if (!counterElement) return;
+
+      const targetNumber = 250;
+      const duration = 2000; // 2 seconds
+      let startTimestamp = null;
+      let hasStarted = false;
+
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+
+        // Easing function: easeOutQuart
+        const easeProgress = 1 - Math.pow(1 - progress, 4);
+        const currentNumber = Math.floor(easeProgress * targetNumber);
+
+        counterElement.innerText = currentNumber + "+";
+
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          counterElement.innerText = "250+";
+        }
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && !hasStarted) {
+          hasStarted = true;
+          window.requestAnimationFrame(step);
+        }
+      }, { threshold: 0.5 });
+
+      observer.observe(counterElement);
+
+      // Animate benefit counters (excluding main pharma-counter)
+      const benefitCounters = document.querySelectorAll('.counter-number:not(#pharma-counter)');
+      benefitCounters.forEach(counter => {
+        const target = parseInt(counter.dataset.target);
+        const duration = 2000;
+        let startTimestamp = null;
+        let hasStarted = false;
+        
+        const animateCounter = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          const easeProgress = 1 - Math.pow(1 - progress, 4);
+          const currentNumber = Math.floor(easeProgress * target);
+          counter.innerText = currentNumber;
+          
+          if (progress < 1) {
+            window.requestAnimationFrame(animateCounter);
+          }
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting && !hasStarted) {
+            hasStarted = true;
+            window.requestAnimationFrame(animateCounter);
+          }
+        }, { threshold: 0.5 });
+        
+        observer.observe(counter);
+      });
+    });
+  </script>
+</body>
+
+</html>

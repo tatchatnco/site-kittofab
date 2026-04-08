@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacies partenaires GlycoSafe — Trouver GlycoSafe près de chez vous | KittOFab</title>
+    <meta name="description"
+        content="Trouvez la pharmacie partenaire GlycoSafe la plus proche de chez vous. Liste complète des officines proposant GlycoSafe, protection capteur glycémique sans adhésif.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ─── Page spécifique — Liste des pharmacies ─── */
+        .search-section {
+            background: var(--color-gray-100);
+            padding: 2rem 1.5rem;
+            border-bottom: 1px solid var(--color-gray-200);
+        }
+
+        .search-bar {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .search-bar__input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.9rem 1.2rem;
+            border: 2px solid var(--color-gray-300);
+            border-radius: var(--radius-pill);
+            font-family: inherit;
+            font-size: var(--text-body);
+            color: var(--color-black);
+            background: var(--color-pure-white);
+            outline: none;
+            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .search-bar__input:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.12);
+        }
+
+        .search-bar__input::placeholder {
+            color: var(--color-gray-400);
+        }
+
+        .search-counter {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: var(--text-small);
+            color: var(--color-gray-500);
+        }
+
+        .search-counter strong {
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+
+        /* ─── Grille des pharmacies ─── */
+        .pharmacies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .pharmacy-card {
+            background: var(--color-pure-white);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            border: 1.5px solid var(--color-gray-200);
+            transition: transform var(--transition-slow), box-shadow var(--transition-slow), border-color var(--transition-fast);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .pharmacy-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-elevated);
+            border-color: rgba(233, 30, 99, 0.3);
+        }
+
+        .pharmacy-card__name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-black);
+            margin-bottom: 0.25rem;
+        }
+
+        .pharmacy-card__address {
+            font-size: var(--text-small);
+            color: var(--color-gray-500);
+            line-height: 1.5;
+        }
+
+        .pharmacy-card__city {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: var(--text-small);
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-top: 0.5rem;
+        }
+
+        .pharmacy-card__city::before {
+            content: '📍';
+            font-size: 0.85rem;
+        }
+
+        .pharmacy-card__dept {
+            display: inline-block;
+            background: rgba(233, 30, 99, 0.08);
+            color: var(--color-primary);
+            border: 1px solid rgba(233, 30, 99, 0.2);
+            border-radius: var(--radius-pill);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.15rem 0.6rem;
+            margin-left: 0.4rem;
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem 1.5rem;
+            color: var(--color-gray-500);
+        }
+
+        .no-results__icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .no-results__title {
+            font-size: var(--text-h3);
+            font-weight: 600;
+            color: var(--color-black);
+            margin-bottom: 0.5rem;
+        }
+
+        .no-results p {
+            font-size: var(--text-body);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .pharmacy-card__actions {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .btn-maps {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #5f9ea0 0%, #7fb8c7 50%, #4a8a7f 100%);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-pill);
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(95, 158, 160, 0.4), inset 0 1px 0 rgba(127, 184, 199, 0.3);
+        }
+
+        .btn-maps:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(127, 184, 199, 0.5), inset 0 1px 0 rgba(95, 158, 160, 0.4);
+            background: linear-gradient(135deg, #7fb8c7 0%, #5f9ea0 50%, #6ba8b0 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .pharmacies-grid {
+                grid-template-columns: 1fr;
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
+      </a>
+      <div class="nav__links" id="navLinks" style="gap:1rem;">
+        <a href="index.html">Accueil</a>
+        <a href="produit.html">Produit</a>
+        <a href="pharmacies.html">Pharmacies</a>
+        <a href="distributeurs.html">Distributeurs</a>
+        <a href="mutuelles.html">Mutuelles</a>
+        <a href="produit.html#faq">FAQ</a>
+        <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Trouver une pharmacie</a>
+        <a href="pharmacies.html#produit-situation" class="nav__cta">Commander</a>
+      </div>
+      <div class="nav__lang" style="margin-left:0.5rem;">
+        <select id="langSelect" onchange="changeLanguage(this.value)">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+    <!-- Hero -->
+    <section class="hero hero--dark">
+        <span class="hero__eyebrow reveal">Réseau de distribution</span>
+        <h1 class="hero__title reveal reveal-delay-1">
+            Trouvez GlycoSafe <span class="highlight">près de chez vous.</span>
+        </h1>
+        <p class="hero__subtitle reveal reveal-delay-2">
+            GlycoSafe est disponible dans plus de 250 pharmacies en France.<br>
+            Recherchez par nom, ville ou département.
+        </p>
+    </section>
+
+    <!-- Barre de recherche -->
+    <div class="search-section">
+        <div class="search-bar">
+            <input
+                type="text"
+                class="search-bar__input"
+                id="searchInput"
+                placeholder="🔍  Rechercher par ville, pharmacie ou département..."
+                autocomplete="off"
+            >
+        </div>
+        <p class="search-counter">
+            <strong id="resultCount">250</strong> pharmacies partenaires dans toute la France
+        </p>
+    </div>
+
+    <!-- Grille des pharmacies -->
+    <main>
+        <div class="pharmacies-grid" id="pharmaciesGrid">
+            <!-- Les cartes sont générées par JavaScript -->
+        </div>
+    </main>
+
+    <!-- CTA contact -->
+    <section class="section section--gradient" style="text-align:center;">
+        <div class="section__inner">
+            <h2 class="section__title section__title--center reveal" style="max-width:600px;margin:0 auto 1.5rem;">
+                Votre pharmacie n'est pas dans la liste ?
+            </h2>
+            <p class="section__subtitle section__subtitle--center reveal reveal-delay-1">
+                Parlez de GlycoSafe à votre pharmacien.<br>
+                Il peut nous contacter pour rejoindre notre réseau.
+            </p>
+            <div class="hero__actions reveal reveal-delay-2">
+                <a href="pharmacies.html#contact" class="btn btn--primary">Espace pharmaciens</a>
+                <a href="mailto:kittofab@gmail.com" class="btn btn--outline" style="border-color:#fff;color:#fff;">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div style="display:inline-block; margin-bottom:1rem;">
+            <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
+          </div>
+          <p>Diabetes without complexes, for a life without limits. Innovation française pour la protection de capteurs glycémiques.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Produit</div>
+          <a href="produit.html">GlycoSafe</a>
+          <a href="produit.html#faq">FAQ</a>
+          <a href="produit.html#compatibilite">Compatibilité</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Professionnels</div>
+          <a href="pharmacies.html">Pharmacies</a>
+          <a href="distributeurs.html">Distributeurs</a>
+          <a href="mutuelles.html">Mutuelles</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="https://www.kittofab.fr">www.kittofab.fr</a>
+        </div>
+      </div>
+      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+        <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
+        <span>Brevet européen en cours</span>
+        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'fr') {
+                window.location.href = 'liste-pharmacies.html';
+            } else if (lang === 'en') {
+                window.location.href = 'en/liste-pharmacies.html';
+            } else if (lang === 'es') {
+                window.location.href = 'es/liste-pharmacies.html';
+            }
+        }
+    </script>
+    <script>
+        // ─── Données des pharmacies ───
+        // Pour ajouter vos pharmacies, ajoutez des objets dans ce tableau :
+        // { name: "Nom de la pharmacie", address: "Adresse", city: "Ville", dept: "75" }
+        const pharmacies = [
+            // ── EXEMPLES — À REMPLACER PAR VOS VRAIES PHARMACIES ──
+            { name: "Pharmacie du Centre", address: "12 rue de la Paix", city: "Paris", dept: "75" },
+            { name: "Pharmacie Lafayette", address: "45 av. Victor Hugo", city: "Lyon", dept: "69" },
+            { name: "Pharmacie des Fleurs", address: "8 rue Gambetta", city: "Bordeaux", dept: "33" },
+            { name: "Pharmacie Saint-Michel", address: "3 place Saint-Michel", city: "Nice", dept: "06" },
+            { name: "Pharmacie du Marché", address: "27 rue du Commerce", city: "Toulouse", dept: "31" },
+            { name: "Pharmacie Centrale", address: "15 rue Nationale", city: "Lille", dept: "59" },
+        ];
+
+        // ─── Fonction pour générer le lien Google Maps avec coordonnées GPS précises ───
+        function generateGoogleMapsLink(name, address, city, dept) {
+            // Construire l'adresse complète pour la géolocalisation
+            const fullAddress = `${address}, ${city} ${dept}, France`;
+            // Utiliser l'API de géolocalisation de Google Maps pour obtenir des coordonnées précises
+            return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
+        }
+        
+        // ─── Rendu des cartes ───
+        function renderPharmacies(list) {
+            const grid = document.getElementById('pharmaciesGrid');
+            const counter = document.getElementById('resultCount');
+            counter.textContent = list.length;
+
+            if (list.length === 0) {
+                grid.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results__icon">🔍</div>
+                        <h3 class="no-results__title">Aucun résultat</h3>
+                        <p>Aucune pharmacie ne correspond à votre recherche.<br>
+                        Essayez avec une autre ville ou un autre département.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = list.map(p => `
+                <div class="pharmacy-card">
+                    <div class="pharmacy-card__name">${p.name}</div>
+                    <div class="pharmacy-card__address">${p.address}</div>
+                    <div>
+                        <span class="pharmacy-card__city">${p.city}</span>
+                        <span class="pharmacy-card__dept">${p.dept}</span>
+                    </div>
+                    <div class="pharmacy-card__actions">
+                        <a href="${generateGoogleMapsLink(p.name, p.address, p.city, p.dept)}" target="_blank" class="btn-maps">
+                            📍 Voir sur Google Maps
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ─── Filtrage en temps réel ───
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
+            const filtered = pharmacies.filter(p =>
+                p.name.toLowerCase().includes(query) ||
+                p.city.toLowerCase().includes(query) ||
+                p.dept.includes(query) ||
+                p.address.toLowerCase().includes(query)
+            );
+            renderPharmacies(filtered);
+        });
+
+        // Rendu initial
+        renderPharmacies(pharmacies);
+    </script>
+
+</body>
+
+</html>
+

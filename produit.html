@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlycoSafe — Protection capteur glycémique sans adhésif | KittOFab</title>
+    <meta name="description"
+        content="GlycoSafe : alternative patch diabète sans colle. Silicone hypoallergénique, BPA free, waterproof. Maintien capteur sport, eau, quotidien. Compatible FreeStyle Libre.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
+      </a>
+      <div class="nav__links" id="navLinks" style="gap:1rem;">
+        <a href="index.html">Accueil</a>
+        <a href="produit.html" class="active">Produit</a>
+        <a href="pharmacies.html">Pharmacies</a>
+        <a href="distributeurs.html">Distributeurs</a>
+        <a href="mutuelles.html">Mutuelles</a>
+        <a href="#faq">FAQ</a>
+        <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Trouver une pharmacie</a>
+        <a href="pharmacies.html#produit-situation" class="nav__cta">Commander</a>
+      </div>
+      <div class="nav__lang" style="margin-left:0.5rem;">
+        <select id="langSelect" onchange="changeLanguage(this.value)">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <span class="hero__eyebrow reveal">GlycoSafe</span>
+        <h1 class="hero__title reveal reveal-delay-1">
+            L'alternative<br><span class="highlight">sans adhésif.</span>
+        </h1>
+        <p class="hero__subtitle reveal reveal-delay-2">
+            Protection capteur glycémique réinventée.<br>Silicone hypoallergénique.<br>Brevet européen en
+            cours.<br>Conçu en France et fabriqué au Vietnam.
+        </p>
+        <img src="img/glycosafe-detail-white.jpg" alt="GlycoSafe détail produit silicone — fond blanc"
+            class="hero__image reveal-scale">
+    </section>
+
+    <!-- Le Problème -->
+    <section class="section section--dark">
+        <div class="section__inner">
+            <div class="split">
+                <div class="split__content reveal">
+                    <span class="section__eyebrow">Le problème</span>
+                    <h2 class="section__title">L'inconfort lié aux colles.</h2>
+                    <p>Le port continu d'un capteur est une révolution dans le suivi glycémique.<br>Mais le maintenir en
+                        place reste un défi quotidien.<br>Irritation et allergies aux colles des sur-patch de capteur
+                        glucose sont le
+                        quotidien de nombreux patients.</p>
+                    <p>Les retraits de patchs abîment l'épiderme.<br>L'eau compromet la tenue.<br>Les vêtements
+                        accrochent.<br>Le
+                        capteur finit par se décoller ou s'arracher.</p>
+                </div>
+                <div class="split__content reveal reveal-delay-2" style="text-align:center;">
+                    <div class="card" style="background:var(--color-gray-900);text-align:left;">
+                        <h3 class="card__title" style="color:var(--color-accent);margin-bottom:1rem;">Les limites des
+                            patchs</h3>
+                        <ul class="split__list">
+                            <li style="color:var(--color-gray-400)">Réactions allergiques et irritations cutanées</li>
+                            <li style="color:var(--color-gray-400)">Décollement sous l'eau et à la transpiration</li>
+                            <li style="color:var(--color-gray-400)">Résidus collants sur la peau</li>
+                            <li style="color:var(--color-gray-400)">Usage unique, coût récurrent</li>
+                            <li style="color:var(--color-gray-400)">Arrachement involontaire par les vêtements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La Solution -->
+    <section class="section section--light">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow reveal">La solution</span>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">Protection sans colle.<br>
+                    Confort
+                    sans compromis.</h2>
+                <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+                    KittOFab propose une rupture technologique.<br>Un bracelet protecteur technique qui sécurise votre
+                    capteur sans aucun contact adhésif avec la peau.
+                </p>
+            </div>
+            <div class="grid grid--2" style="max-width:900px;margin:0 auto;">
+                <div class="card reveal reveal-delay-1">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Application instantanée</h3>
+                    <p class="card__text">Chapeautez le capteur avec la bague en silicone du GlycoSafe.<br>Ajustez le
+                        bracelet.<br>C'est
+                        prêt.<br>Retrait sans contraintes.</p>
+                </div>
+                <div class="card reveal reveal-delay-2">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <path
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Forme ergonomique</h3>
+                    <p class="card__text">Épouse les contours du capteur pour le stabiliser efficacement.<br>Sans
+                        pression
+                        directe.<br>Pas d'effet garrot.</p>
+                </div>
+                <div class="card reveal reveal-delay-3">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Waterproof</h3>
+                    <p class="card__text">Douche, piscine, sport intense.<br>Le silicone est totalement
+                        étanche.<br>Votre
+                        capteur reste en place.</p>
+                </div>
+                <div class="card reveal reveal-delay-4">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <path
+                                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Réutilisable</h3>
+                    <p class="card__text">Durée de vie de plusieurs mois.<br>Il suffit de le laver à l'eau et au savon
+                        neutre pour retrouver son aspect neuf.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Composition avec image réelle -->
+    <section class="section section--gray">
+        <div class="section__inner">
+            <div class="split split--reverse">
+                <div class="split__image reveal-scale">
+                    <img src="img/glycosafe-arm.jpg" alt="GlycoSafe porté sur le bras — silicone hypoallergénique">
+                </div>
+                <div class="split__content reveal reveal-delay-2">
+                    <span class="section__eyebrow">Composition</span>
+                    <h2 class="section__title">Matériaux premium. Sécurité maximale.</h2>
+                    <p>Chaque composant est sélectionné pour sa biocompatibilité et sa durabilité.<br>Aucun compromis
+                        sur
+                        la qualité.</p>
+                    <div class="pill-group">
+                        <span class="pill pill--magenta">Silicone doux</span>
+                        <span class="pill pill--cyan">Hypoallergénique</span>
+                        <span class="pill pill--orange">BPA Free</span>
+                        <span class="pill pill--green">Élasthane type Spandex</span>
+                        <span class="pill pill--magenta">Waterproof</span>
+                        <span class="pill pill--cyan">Lavable</span>
+                    </div>
+                    <p>La bague en silicone maintient le capteur avec précision.<br>Le bracelet en élasthane
+                        type Spandex assure un ajustement confortable sans compression.<br>Pas d'effet garrot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie multi-angle -->
+    <section class="section section--dark">
+        <div class="section__inner" style="text-align:center;margin-bottom:3rem;">
+            <span class="section__eyebrow reveal">La gamme</span>
+            <h2 class="section__title section__title--center reveal reveal-delay-1">8 coloris. Un seul objectif.</h2>
+            <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+                Du classique au vibrant, choisissez le coloris qui correspond à votre style.
+            </p>
+        </div>
+        <div class="gallery gallery--3 reveal-scale">
+            <div class="gallery__item">
+                <img src="img/glycosafe-pile.jpg" alt="Tous les bracelets GlycoSafe en tas" loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="img/glycosafe-colors-dark.jpg" alt="GlycoSafe gamme couleurs vives" loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="img/glycosafe-detail-dark.jpg" alt="GlycoSafe détail bague silicone" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparaison -->
+    <section class="section section--light">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow reveal">Comparatif</span>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">GlycoSafe vs Patchs adhésifs.
+                </h2>
+            </div>
+            <div class="reveal reveal-delay-2">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Critère</th>
+                            <th class="highlight-col" style="color:#4caf50;font-size:1.1rem;">GlycoSafe</th>
+                            <th style="color:#42a5f5;font-size:1.1rem;">Patch adhésif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Contact colle / peau</td>
+                            <td class="highlight-col"><span class="check">Aucun</span></td>
+                            <td><span class="cross">Direct et continu</span></td>
+                        </tr>
+                        <tr>
+                            <td>Risque allergique</td>
+                            <td class="highlight-col"><span class="check">Nul</span></td>
+                            <td><span class="cross">Élevé</span></td>
+                        </tr>
+                        <tr>
+                            <td>Résistance à l'eau</td>
+                            <td class="highlight-col"><span class="check">Totale</span></td>
+                            <td><span class="cross">Compromise</span></td>
+                        </tr>
+                        <tr>
+                            <td>Durée d'utilisation</td>
+                            <td class="highlight-col"><span class="check">Plusieurs mois</span></td>
+                            <td><span class="cross">Usage unique</span></td>
+                        </tr>
+                        <tr>
+                            <td>Résidus sur la peau</td>
+                            <td class="highlight-col"><span class="check">Zéro</span></td>
+                            <td><span class="cross">Colle résiduelle</span></td>
+                        </tr>
+                        <tr>
+                            <td>Prix long terme</td>
+                            <td class="highlight-col"><span class="check">Économique</span></td>
+                            <td><span class="cross">Coût récurrent</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibilité -->
+    <section class="section section--dark" id="compatibilite">
+        <div class="section__inner section__inner--narrow" style="text-align:center;">
+            <span class="section__eyebrow reveal">Compatibilité</span>
+            <h2 class="section__title section__title--center reveal reveal-delay-1">Compatible avec vos capteurs.</h2>
+            <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+                GlycoSafe fonctionne avec les principaux modèles du marché.<br>Des adaptateurs additionnels sont en
+                développement.
+            </p>
+            <div class="compat-grid reveal reveal-delay-3">
+                <div class="card--compat">
+                    <h3 class="card--compat__title">FreeStyle Libre 2 ABBOTT</h3>
+                </div>
+                <div class="card--compat">
+                    <h3 class="card--compat__title">FreeStyle Libre 2 Plus ABBOTT</h3>
+                </div>
+                <div class="card--compat">
+                    <h3 class="card--compat__title">FreeStyle Libre Select ABBOTT</h3>
+                </div>
+                <div class="card--compat">
+                    <h3 class="card--compat__title">Lingo OTC/h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--light" id="faq">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow reveal">Questions fréquentes</span>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">Tout ce que vous devez savoir.
+                </h2>
+            </div>
+            <div class="faq reveal reveal-delay-2">
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Le GlycoSafe est-il un dispositif médical ?
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer__inner">
+                            Non.<br>Il s'agit d'un accessoire de confort et de maintien externe, conçu pour sécuriser
+                            votre
+                            capteur glycémique.<br>Il ne remplace aucun dispositif médical et n'interfère pas avec le
+                            fonctionnement du capteur.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Comment installer le GlycoSafe ?
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer__inner">
+                            Glissez le bracelet en élasthane autour du bras et chapeautez le capteur avec la bague
+                            en silicone du GlycoSafe.<br>
+                            Ajustez le GlycoSafe confortablement<br>
+                            L'installation prend quelques secondes.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Puis-je me doucher et nager avec ?
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer__inner">
+                            Oui.<br>Le silicone est totalement waterproof.<br>Vous pouvez vous doucher, nager et
+                            pratiquer
+                            tout sport aquatique.<br>Le GlycoSafe ne craint pas l'eau.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Combien de temps dure un GlycoSafe ?
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer__inner">
+                            Plusieurs mois d'utilisation quotidienne.<br>Le silicone et l'élasthane conservent leurs
+                            propriétés dans le temps.<br>Un simple lavage à l'eau et au savon neutre suffit pour
+                            l'entretien.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Est-il disponible en pharmacie ?
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer__inner">
+                            Oui.<br>GlycoSafe est déjà distribué dans plus de 250 pharmacies en France.<br>Demandez-le à
+                            votre
+                            pharmacien ou consultez notre <a href="liste-pharmacies.html"
+                                style="color:var(--color-primary);text-decoration:underline;">liste d'officines</a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        Comment le GlycoSafe tient-il sans colle ?
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <div class="faq__answer__inner">
+                            Le système de bague en silicone ainsi que les bagues adaptatrices brevetées épousent
+                            parfaitement les contours du capteur.<br>
+                            Le bracelet en élasthane maintient l'ensemble avec une tension calibrée.<br>
+                            Aucune colle n'est nécessaire.<br>
+                            Aucune pression excessive n'est exercée.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--gradient" style="text-align:center;">
+        <div class="section__inner">
+            <h2 class="section__title section__title--center reveal"
+                style="max-width:600px;margin-left:auto;margin-right:auto;">
+                Libérez votre peau. Sécurisez votre capteur.
+            </h2>
+            <p class="section__subtitle section__subtitle--center reveal reveal-delay-1"
+                style="color:var(--color-gray-400);">
+                Disponible en pharmacie. 8 coloris. Taille unique.
+            </p>
+            <div class="hero__actions reveal reveal-delay-2" style="text-align:center;justify-content:center;">
+                <a href="liste-pharmacies.html" class="btn" style="background:linear-gradient(90deg, #e91e63, #ff6b35, #ffd700, #00d4aa, #00aeef, #e91e63);background-size:200% auto;color:white;border:none;font-weight:bold;padding:1rem 2.5rem;transition:all 0.5s ease;" onmouseover="this.style.backgroundPosition='right center';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 25px rgba(233, 30, 99, 0.4)';" onmouseout="this.style.backgroundPosition='left center';this.style.transform='translateY(0)';this.style.boxShadow='none';">Trouver une pharmacie</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div style="display:inline-block; margin-bottom:1rem;">
+            <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
+          </div>
+          <p>Diabetes without complexes, for a life without limits. Innovation française pour la protection de capteurs glycémiques.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Produit</div>
+          <a href="produit.html">GlycoSafe</a>
+          <a href="produit.html#faq">FAQ</a>
+          <a href="produit.html#compatibilite">Compatibilité</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Professionnels</div>
+          <a href="pharmacies.html">Pharmacies</a>
+          <a href="distributeurs.html">Distributeurs</a>
+          <a href="mutuelles.html">Mutuelles</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="https://www.kittofab.fr">www.kittofab.fr</a>
+        </div>
+      </div>
+      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+        <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
+        <span>Brevet européen en cours</span>
+        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'fr') {
+                window.location.href = 'produit.html';
+            } else if (lang === 'en') {
+                window.location.href = 'en/produit.html';
+            } else if (lang === 'es') {
+                window.location.href = 'es/produit.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacies — GlycoSafe en officine | KittOFab</title>
+    <meta name="description"
+        content="Pharmaciens : proposez GlycoSafe, la seule protection capteur glycémique sans adhésif disponible en officine. Marge attractive, présentoir comptoir, franco de port.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
+      </a>
+      <div class="nav__links" id="navLinks" style="gap:1rem;">
+        <a href="index.html">Accueil</a>
+        <a href="produit.html">Produit</a>
+        <a href="pharmacies.html" class="active">Pharmacies</a>
+        <a href="distributeurs.html">Distributeurs</a>
+        <a href="mutuelles.html">Mutuelles</a>
+        <a href="produit.html#faq">FAQ</a>
+        <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Trouver une pharmacie</a>
+        <a href="#produit-situation" class="nav__cta">Commander</a>
+      </div>
+      <div class="nav__lang" style="margin-left:0.5rem;">
+        <select id="langSelect" onchange="changeLanguage(this.value)">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+    <!-- Hero -->
+    <section class="hero hero--dark">
+        <span class="hero__eyebrow reveal">Espace Pharmaciens</span>
+        <h1 class="hero__title reveal reveal-delay-1">
+            La seule protection <span class="highlight">sans colle</span> en officine.
+        </h1>
+        <p class="hero__subtitle reveal reveal-delay-2">
+            Complétez votre offre capteurs glycémiques avec un produit innovant, à forte valeur ajoutée et sans
+            concurrence directe en pharmacie.
+        </p>
+        <div class="hero__actions reveal reveal-delay-3">
+            <a href="#produit-situation" class="btn btn--primary">Commander un présentoir</a>
+            <a href="#avantages" class="btn btn--outline" style="border-color:#fff;color:#fff;">Voir les avantages</a>
+        </div>
+    </section>
+
+    <!-- Opportunité marché avec image produit -->
+    <section class="section section--light">
+        <div class="section__inner">
+            <div class="split">
+                <div class="split__content reveal">
+                    <span class="section__eyebrow">Opportunité</span>
+                    <h2 class="section__title">Le marché du diabète en pleine expansion.</h2>
+                    <p>La délivrance de capteurs de glucose croît de façon exponentielle.<br>Vos patients rencontrent
+                        tous
+                        le même problème : la tolérance cutanée aux adhésifs.</p>
+                    <p>GlycoSafe est le complément naturel à chaque dispensation de capteur.<br>Un achat d'impulsion
+                        pertinent qui répond à un besoin réel.</p>
+                    <ul class="split__list">
+                        <li>Seule alternative sans colle disponible en officine</li>
+                        <li>Produit innovant avec brevet européen en cours</li>
+                        <li>Marque française, fabrication vietnamienne, le meilleur Silicone</li>
+                        <li>Déjà référencé dans 250+ pharmacies</li>
+                    </ul>
+                </div>
+                <div class="split__image reveal-scale">
+                    <img src="img/glycosafe-colors-all.jpg"
+                        alt="Gamme complète GlycoSafe — tous les coloris disponibles en officine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages commerciaux -->
+    <section class="section section--dark" id="avantages">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow reveal">Vos avantages</span>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">Un produit accessible pour tous
+                    et simple à
+                    gérer.</h2>
+            </div>
+            <div class="grid grid--2" style="max-width:900px;margin:0 auto;">
+                <div class="card reveal reveal-delay-1">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <path
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Opportunité attractive</h3>
+                    <p class="card__text">Un produit de confort premium offrant une expérience client particulièrement
+                        intéressante pour votre officine sur chaque vente.</p>
+                </div>
+                <div class="card reveal reveal-delay-2">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Rotation rapide</h3>
+                    <p class="card__text">Produit d'appel qui suscite l'intérêt immédiat au comptoir.<br>Conseil
+                        facile.<br>
+                        Recommandation naturelle lors de la dispensation de capteurs.</p>
+                </div>
+                <div class="card reveal reveal-delay-3">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <path
+                                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Présentoir comptoir</h3>
+                    <p class="card__text">Présentoir compact et élégant.<br>Disponible en format 16 ou 32
+                        pièces.<br>Mise en
+                        avant optimisée sans encombrement.</p>
+                </div>
+                <div class="card reveal reveal-delay-4">
+                    <div class="card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"
+                            stroke-width="2">
+                            <path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title">Gestion simplifiée</h3>
+                    <p class="card__text">Taille unique.<br>8 coloris.<br>Franco de port accessible.<br>Pas de gestion
+                        de stock
+                        complexe.<br>Réassort rapide et fiable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image showcase produit -->
+    <section class="section section--gray" id="produit-situation">
+        <div class="section__inner" style="text-align:center;">
+            <span class="section__eyebrow reveal">Le produit en situation</span>
+            <h2 class="section__title section__title--center reveal reveal-delay-1">Des présentoirs adaptés à votre
+                espace.</h2>
+        </div>
+        <div class="gallery gallery--3 reveal-scale" style="margin-top:3rem;">
+            <div class="gallery__item">
+                <img src="img/glycosafe-presentoir-16-new.jpg" alt="Boîte de présentation comptoir GlycoSafe 16 pièces"
+                    loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="img/glycosafe-presentoir.jpg" alt="Présentoir comptoir GlycoSafe 32 pièces" loading="lazy">
+            </div>
+            <div class="gallery__item">
+                <img src="img/glycosafe-packaging.jpg" alt="Boîtes individuelles GlycoSafe" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire Contact -->
+    <section class="section section--light" id="contact">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow reveal">Contact professionnel</span>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">Commandez votre présentoir.</h2>
+                <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+                    Remplissez ce formulaire pour recevoir notre offre commerciale et commander votre présentoir
+                    comptoir GlycoSafe.
+                </p>
+            </div>
+            <form class="form reveal reveal-delay-3" id="contactForm" action="mailto:kittofab@gmail.com" method="post"
+                enctype="text/plain">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label" for="nom">Nom</label>
+                        <input class="form__input" type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="prenom">Prénom</label>
+                        <input class="form__input" type="text" id="prenom" name="prenom" placeholder="Votre prénom"
+                            required>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="pharmacie">Nom de la pharmacie</label>
+                    <input class="form__input" type="text" id="pharmacie" name="pharmacie"
+                        placeholder="Pharmacie du Centre" required>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label" for="email">Email professionnel</label>
+                        <input class="form__input" type="email" id="email" name="email"
+                            placeholder="contact@pharmacie.fr" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="telephone">Téléphone</label>
+                        <input class="form__input" type="tel" id="telephone" name="telephone"
+                            placeholder="01 23 45 67 89">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="presentoir">Format présentoir</label>
+                    <select class="form__input" id="presentoir" name="presentoir">
+                        <option value="">Choisir un format</option>
+                        <option value="16">Présentoir 16 pièces</option>
+                        <option value="32">Présentoir 32 pièces</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="message">Message (optionnel)</label>
+                    <textarea class="form__textarea" id="message" name="message"
+                        placeholder="Votre message ou questions..."></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary">Envoyer ma demande</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div style="display:inline-block; margin-bottom:1rem;">
+            <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
+          </div>
+          <p>Diabetes without complexes, for a life without limits. Innovation française pour la protection de capteurs glycémiques.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Produit</div>
+          <a href="produit.html">GlycoSafe</a>
+          <a href="produit.html#faq">FAQ</a>
+          <a href="produit.html#compatibilite">Compatibilité</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Professionnels</div>
+          <a href="pharmacies.html">Pharmacies</a>
+          <a href="distributeurs.html">Distributeurs</a>
+          <a href="mutuelles.html">Mutuelles</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="https://www.kittofab.fr">www.kittofab.fr</a>
+        </div>
+      </div>
+      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+        <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
+        <span>Brevet européen en cours</span>
+        <span style="color:var(--color-gray-400);font-size:0.875rem;">&copy; 2026 KittoFab. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'fr') {
+                window.location.href = 'pharmacies.html';
+            } else if (lang === 'en') {
+                window.location.href = 'en/pharmacies.html';
+            } else if (lang === 'es') {
+                window.location.href = 'es/pharmacies.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutuelles — Offre GlycoSafe pour vos adhérents | KittOFab</title>
+    <meta name="description"
+        content="Mutuelles : améliorez la qualité de vie de vos adhérents diabétiques avec GlycoSafe, protection capteur sans adhésif. Prévention irritations et pertes de capteurs.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
+      </a>
+      <div class="nav__links" id="navLinks" style="gap:1rem;">
+        <a href="index.html">Accueil</a>
+        <a href="produit.html">Produit</a>
+        <a href="pharmacies.html">Pharmacies</a>
+        <a href="distributeurs.html">Distributeurs</a>
+        <a href="mutuelles.html" class="active">Mutuelles</a>
+        <a href="produit.html#faq">FAQ</a>
+        <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Trouver une pharmacie</a>
+        <a href="#contact-mutuelle" class="nav__cta">Nous contacter</a>
+      </div>
+      <div class="nav__lang" style="margin-left:0.5rem;">
+        <select id="langSelect" onchange="changeLanguage(this.value)">
+          <option value="fr" selected>FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+    <section class="hero">
+        <span class="hero__eyebrow reveal">Mutuelles & Assureurs</span>
+        <h1 class="hero__title reveal reveal-delay-1">Investissez dans le <span class="highlight">confort de vos
+                adhérents.</span></h1>
+        <p class="hero__subtitle reveal reveal-delay-2">Le diabète impose assez de contraintes.<br>La protection du
+            capteur
+            ne devrait pas en être une.<br>Offrez une solution concrète et préventive.</p>
+        <div class="hero__actions reveal reveal-delay-3">
+            <a href="#contact-mutuelle" class="btn btn--primary">Étudier un partenariat</a>
+        </div>
+        <img src="img/glycosafe-arm.jpg" alt="GlycoSafe porté — solution de confort pour adhérents diabétiques"
+            class="hero__image reveal-scale">
+    </section>
+
+    <section class="section section--dark">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow reveal">Qualité de vie</span>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">Améliorer le quotidien de vos
+                    adhérents diabétiques.</h2>
+                <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">Le port continu d'un
+                    capteur glycémique s'accompagne de contraintes cutanées.<br>GlycoSafe supprime l'inconfort immédiat
+                    lié
+                    aux adhésifs.</p>
+            </div>
+            <div class="grid grid--3">
+                <div class="card reveal reveal-delay-1">
+                    <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#8dc63f" stroke-width="2">
+                            <path
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg></div>
+                    <h3 class="card__title">Limiter les allergies</h3>
+                    <p class="card__text">Réduction des consultations liées aux affections cutanées de contact.<br>Zéro
+                        colle sur la peau.</p>
+                </div>
+                <div class="card reveal reveal-delay-2">
+                    <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#8dc63f" stroke-width="2">
+                            <path
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg></div>
+                    <h3 class="card__title">Sécuriser l'équipement</h3>
+                    <p class="card__text">Diminution des pertes et arrachements de capteurs, dispositifs coûteux pour le
+                        système de santé.</p>
+                </div>
+                <div class="card reveal reveal-delay-3">
+                    <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#8dc63f" stroke-width="2">
+                            <path
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg></div>
+                    <h3 class="card__title">Améliorer le bien-être</h3>
+                    <p class="card__text">Liberté de mouvement retrouvée.<br>Sport, eau, vie quotidienne sans contrainte
+                        adhésive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--light">
+        <div class="section__inner">
+            <div class="split">
+                <div class="split__content reveal">
+                    <span class="section__eyebrow">Prévention</span>
+                    <h2 class="section__title">Un positionnement préventif concret.</h2>
+                    <p>Irritations cutanées, allergies de contact, pertes de capteurs coûteux.<br>Autant de postes de
+                        dépenses évitables.<br>GlycoSafe agit en amont, avant que le problème ne survienne.</p>
+                    <ul class="split__list">
+                        <li>Réduction des consultations dermatologiques liées aux adhésifs</li>
+                        <li>Diminution du gaspillage de capteurs par arrachement</li>
+                        <li>Amélioration de l'observance thérapeutique</li>
+                        <li>Produit hypoallergénique, BPA free, durable</li>
+                    </ul>
+                </div>
+                <div class="split__image reveal-scale">
+                    <img src="img/glycosafe-colors-dark.jpg"
+                        alt="Gamme GlycoSafe — couleurs disponibles pour vos adhérents">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposition partenariat -->
+    <section class="section section--gray">
+        <div class="section__inner">
+            <div class="split split--reverse">
+                <div class="split__image reveal-scale">
+                    <img src="img/glycosafe-detail-dark.jpg" alt="GlycoSafe détail — qualité premium">
+                </div>
+                <div class="split__content reveal reveal-delay-2">
+                    <span class="section__eyebrow">Partenariat</span>
+                    <h2 class="section__title">Une offre de différenciation forte.</h2>
+                    <p>Proposez un service additionnel pertinent.<br>Montrez à vos adhérents diabétiques que vous
+                        comprenez
+                        leurs problématiques quotidiennes.</p>
+                    <ul class="split__list">
+                        <li>Offre exclusive pour vos adhérents</li>
+                        <li>Prise en charge partielle via forfait prévention</li>
+                        <li>Communication ciblée santé et bien-être</li>
+                        <li>Tarification dédiée pour volumes</li>
+                    </ul>
+                    <a href="#contact-mutuelle" class="btn btn--primary">Étudier un partenariat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gradient" id="contact-mutuelle">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow reveal">Partenariat</span>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">Étudions ensemble votre offre
+                    adhérents.</h2>
+            </div>
+            <form class="form reveal reveal-delay-2" id="mutuelleForm" action="mailto:kittofab@gmail.com" method="post"
+                enctype="text/plain">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label" for="m-nom">Nom</label>
+                        <input class="form__input" type="text" id="m-nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="m-organisme">Organisme</label>
+                        <input class="form__input" type="text" id="m-organisme" placeholder="Nom de la mutuelle"
+                            required>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label" for="m-email">Email</label>
+                        <input class="form__input" type="email" id="m-email" placeholder="contact@mutuelle.fr" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="m-tel">Téléphone</label>
+                        <input class="form__input" type="tel" id="m-tel" placeholder="01 23 45 67 89">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="m-message">Message</label>
+                    <textarea class="form__textarea" id="m-message" placeholder="Décrivez votre projet..."></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary">Envoyer ma demande</button>
+            </form>
+        </div>
+    </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div style="display:inline-block; margin-bottom:1rem;">
+            <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
+          </div>
+          <p>Diabetes without complexes, for a life without limits. Innovation française pour la protection de capteurs glycémiques.</p>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Produit</div>
+          <a href="produit.html">GlycoSafe</a>
+          <a href="produit.html#faq">FAQ</a>
+          <a href="produit.html#compatibilite">Compatibilité</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Professionnels</div>
+          <a href="pharmacies.html">Pharmacies</a>
+          <a href="distributeurs.html">Distributeurs</a>
+          <a href="mutuelles.html">Mutuelles</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__col-title">Contact</div>
+          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="https://www.kittofab.fr">www.kittofab.fr</a>
+        </div>
+      </div>
+      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+        <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
+        <span>Brevet européen en cours</span>
+        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'fr') {
+                window.location.href = 'mutuelles.html';
+            } else if (lang === 'en') {
+                window.location.href = 'en/mutuelles.html';
+            } else if (lang === 'es') {
+                window.location.href = 'es/mutuelles.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

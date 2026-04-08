@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Espacements</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .test-section {
+            border: 2px solid red;
+            background: rgba(255, 0, 0, 0.1);
+        }
+        .test-hero {
+            border: 2px solid blue;
+            background: rgba(0, 0, 255, 0.1);
+        }
+        .test-next {
+            border: 2px solid green;
+            background: rgba(0, 255, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
+            </a>
+            <div class="nav__links" id="navLinks">
+                <a href="index.html">Accueil</a>
+                <a href="pharmacies.html">Pharmacies</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Standard (comme index.html) -->
+    <section class="hero test-hero">
+        <h2>HERO STANDARD (index.html)</h2>
+        <p>Avec image et margin-top: var(--space-2xl)</p>
+        <img src="img/glycosafe-hero.jpg" alt="test" class="hero__image" style="max-height: 200px;">
+    </section>
+
+    <!-- Section suivante -->
+    <section class="section section--light test-next">
+        <div class="section__inner">
+            <h2>Section suivante - ESPACEMENT NORMAL</h2>
+        </div>
+    </section>
+
+    <!-- Hero Dark (comme pharmacies.html) -->
+    <section class="hero hero--dark test-hero">
+        <h2>HERO DARK (pharmacies.html)</h2>
+        <p>Sans image</p>
+    </section>
+
+    <!-- Section suivante -->
+    <section class="section section--light test-next">
+        <div class="section__inner">
+            <h2>Section suivante - ESPACEMENT PROBLÉMATIQUE</h2>
+        </div>
+    </section>
+
+</body>
+</html>
+
