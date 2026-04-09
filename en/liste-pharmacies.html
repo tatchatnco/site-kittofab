@@ -310,25 +310,46 @@
             }
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
     <script src="../js/main.js"></script>
     <script>
-        // ─── Function to generate Google Maps link with precise GPS coordinates ───
+        // ─── Supabase Configuration ───
+        const supabaseUrl = 'https://ubbrxhjilvugjjyewixy.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InViYnJ4aGppbHZ1Z2pqeWV3aXh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3MjA3ODQsImV4cCI6MjA5MTI5Njc4NH0.0GqNQ58JsNCet_UOTuPgLXhw4KE05HSMRsfhf76z268';
+        const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+        // ─── Pharmacy data (loaded from Supabase) ───
+        let pharmacies = [];
+
+        // ─── Load pharmacies from Supabase ───
+        async function loadPharmacies() {
+            const { data, error } = await supabase
+                .from('pharmacies')
+                .select('*');
+
+            if (error) {
+                console.error('Supabase error:', error);
+                return;
+            }
+
+            // Convert Supabase format to expected format
+            pharmacies = data.map(p => ({
+                name: p.nom,
+                address: p.adresse,
+                city: p.ville,
+                dept: p.cp
+            }));
+
+            // Update total counter
+            const totalCount = document.getElementById('totalCount');
+            if (totalCount) totalCount.textContent = pharmacies.length;
+        }
+
+        // ─── Function to generate Google Maps link ───
         function generateGoogleMapsLink(name, address, city, dept) {
-            // Build complete address for geolocation
             const fullAddress = `${address}, ${city} ${dept}, France`;
-            // Use Google Maps geolocation API to get precise coordinates
             return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
         }
-        
-        // Pharmacy data
-        const pharmacies = [
-            { name: "Pharmacie du Centre", address: "12 rue de la Paix", city: "Paris", dept: "75" },
-            { name: "Pharmacie Lafayette", address: "45 av. Victor Hugo", city: "Lyon", dept: "69" },
-            { name: "Pharmacie des Fleurs", address: "8 rue Gambetta", city: "Bordeaux", dept: "33" },
-            { name: "Pharmacie Saint-Michel", address: "3 place Saint-Michel", city: "Nice", dept: "06" },
-            { name: "Pharmacie du Marché", address: "27 rue du Commerce", city: "Toulouse", dept: "31" },
-            { name: "Pharmacie Centrale", address: "15 rue Nationale", city: "Lille", dept: "59" },
-        ];
 
         // ─── Render pharmacy cards ───
         function renderPharmacies(list) {
@@ -368,19 +389,19 @@
         const searchInput = document.getElementById('searchInput');
         const resultsSection = document.getElementById('pharmaciesResults');
         const resultsTitle = document.getElementById('resultsTitle');
-        
+
         searchInput.addEventListener('input', function () {
             const query = this.value.toLowerCase().trim();
-            
+
             const filtered = pharmacies.filter(p =>
                 p.name.toLowerCase().includes(query) ||
                 p.city.toLowerCase().includes(query) ||
                 p.dept.includes(query) ||
                 p.address.toLowerCase().includes(query)
             );
-            
+
             renderPharmacies(filtered);
-            
+
             if (query.length > 0) {
                 resultsSection.style.display = 'block';
                 resultsTitle.innerHTML = `Results for "${this.value}" <span id="resultsCount" style="color: var(--color-primary);">(${filtered.length})</span>`;
@@ -389,7 +410,10 @@
             }
         });
 
-        // ─── Initial state (no pharmacies displayed) ───
+        // ─── Initial load ───
+        loadPharmacies();
+
+        // ─── Initial state (no pharmacies displayed by default) ───
         resultsSection.style.display = 'none';
     </script>
 </body>

@@ -9,54 +9,134 @@
         content="Trouvez la pharmacie partenaire GlycoSafe la plus proche de chez vous. Liste complète des officines proposant GlycoSafe, protection capteur glycémique sans adhésif.">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* ─── Page spécifique — Liste des pharmacies ─── */
-        .search-section {
-            background: var(--color-gray-100);
-            padding: 2rem 1.5rem;
-            border-bottom: 1px solid var(--color-gray-200);
+        /* ═══ Zone de recherche moderne & fun ═══ */
+        .search-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #e91e63 50%, #ff7f00 75%, #00aeef 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            padding: 4rem 1.5rem 6rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        .search-bar {
-            max-width: 700px;
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .search-hero__content {
+            max-width: 800px;
             margin: 0 auto;
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .search-bar__input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.9rem 1.2rem;
-            border: 2px solid var(--color-gray-300);
-            border-radius: var(--radius-pill);
-            font-family: inherit;
-            font-size: var(--text-body);
-            color: var(--color-black);
-            background: var(--color-pure-white);
-            outline: none;
-            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-        }
-
-        .search-bar__input:focus {
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.12);
-        }
-
-        .search-bar__input::placeholder {
-            color: var(--color-gray-400);
-        }
-
-        .search-counter {
             text-align: center;
-            margin-top: 1rem;
-            font-size: var(--text-small);
-            color: var(--color-gray-500);
+            position: relative;
+            z-index: 2;
         }
 
-        .search-counter strong {
-            color: var(--color-primary);
+        /* Titre fun */
+        .search-hero__title {
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 0.75rem;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+        }
+
+        .search-hero__highlight {
+            background: linear-gradient(90deg, #fff, #ffd700, #fff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shine 2s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .search-hero__subtitle {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .search-hero__subtitle strong {
+            background: white;
+            color: #e91e63;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
             font-weight: 700;
+        }
+
+        /* Barre de recherche flottante */
+        .search-box {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .search-box__input {
+            width: 100%;
+            padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2), 0 0 0 4px rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .search-box__input:focus {
+            transform: scale(1.02) translateY(-2px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 0 6px rgba(233, 30, 99, 0.3), inset 0 0 20px rgba(233, 30, 99, 0.1);
+        }
+
+        .search-box__input::placeholder {
+            color: #888;
+        }
+
+        .search-box__icon {
+            position: absolute;
+            left: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.3rem;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .search-box__sparkles {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.5; transform: translateY(-50%) scale(1); }
+            50% { opacity: 1; transform: translateY(-50%) scale(1.2); }
+        }
+
+        /* Vagues décoratives en bas */
+        .search-waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            line-height: 0;
+        }
+
+        .search-waves svg {
+            display: block;
+            width: 100%;
+            height: auto;
         }
 
         /* ─── Grille des pharmacies ─── */
@@ -253,21 +333,38 @@
         </p>
     </section>
 
-    <!-- Barre de recherche -->
-    <div class="search-section">
-        <div class="search-bar">
-            <input
-                type="text"
-                class="search-bar__input"
-                id="searchInput"
-                placeholder="🔍  Rechercher par ville, pharmacie ou département..."
-                autocomplete="off"
-            >
+    <!-- ═══ Zone de recherche moderne & fun ═══ -->
+    <section class="search-hero">
+        <div class="search-hero__content">
+            <!-- Titre fun -->
+            <h2 class="search-hero__title">
+                Trouve ta pharmacie <span class="search-hero__highlight">Rapidement</span> !
+            </h2>
+            <p class="search-hero__subtitle">
+                Plus de <strong id="totalCount">250</strong> pharmacies partenaires dans toute la France
+            </p>
+            
+            <!-- Barre de recherche flottante -->
+            <div class="search-box">
+                <div class="search-box__icon">🔍</div>
+                <input
+                    type="text"
+                    class="search-box__input"
+                    id="searchInput"
+                    placeholder="Tape une ville, un code postal ou un nom..."
+                    autocomplete="off"
+                >
+                <div class="search-box__sparkles">✨</div>
+            </div>
         </div>
-        <p class="search-counter">
-            <strong id="totalCount">250</strong> pharmacies partenaires dans toute la France
-        </p>
-    </div>
+        
+        <!-- Vagues décoratives -->
+        <div class="search-waves">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#fbfbfd"/>
+            </svg>
+        </div>
+    </section>
 
     <!-- Résultats de recherche -->
     <main>
@@ -335,6 +432,7 @@
     </div>
   </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         function changeLanguage(lang) {
@@ -348,27 +446,60 @@
         }
     </script>
     <script>
-        // ─── Données des pharmacies ───
-        // Pour ajouter vos pharmacies, ajoutez des objets dans ce tableau :
-        // { name: "Nom de la pharmacie", address: "Adresse", city: "Ville", dept: "75" }
-        const pharmacies = [
-            // ── EXEMPLES — À REMPLACER PAR VOS VRAIES PHARMACIES ──
-            { name: "Pharmacie du Centre", address: "12 rue de la Paix", city: "Paris", dept: "75" },
-            { name: "Pharmacie Lafayette", address: "45 av. Victor Hugo", city: "Lyon", dept: "69" },
-            { name: "Pharmacie des Fleurs", address: "8 rue Gambetta", city: "Bordeaux", dept: "33" },
-            { name: "Pharmacie Saint-Michel", address: "3 place Saint-Michel", city: "Nice", dept: "06" },
-            { name: "Pharmacie du Marché", address: "27 rue du Commerce", city: "Toulouse", dept: "31" },
-            { name: "Pharmacie Centrale", address: "15 rue Nationale", city: "Lille", dept: "59" },
-        ];
+        // ─── Configuration Supabase ───
+        const supabaseUrl = 'https://ubbrxhjilvugjjyewixy.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InViYnJ4aGppbHZ1Z2pqeWV3aXh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3MjA3ODQsImV4cCI6MjA5MTI5Njc4NH0.0GqNQ58JsNCet_UOTuPgLXhw4KE05HSMRsfhf76z268';
+        const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
 
-        // ─── Fonction pour générer le lien Google Maps avec coordonnées GPS précises ───
+        // ─── Données des pharmacies (chargées depuis Supabase) ───
+        let pharmacies = [];
+
+        // ─── Fonction pour charger les pharmacies depuis Supabase ───
+        async function loadPharmacies() {
+            try {
+                const { data, error } = await supabaseClient
+                    .from('pharmacies')
+                    .select('*');
+
+                if (error) {
+                    console.error('Erreur Supabase:', error);
+                    alert('❌ Erreur de connexion: ' + error.message);
+                    return;
+                }
+
+                console.log('Données reçues:', data);
+
+                if (!data || data.length === 0) {
+                    alert('⚠️ La table pharmacies est vide');
+                    return;
+                }
+
+                // Conversion du format Supabase vers le format attendu par le JavaScript
+                pharmacies = data.map(p => ({
+                    name: p.nom,
+                    address: p.adresse,
+                    city: p.ville,
+                    dept: p.code_postal
+                }));
+
+                // Met à jour le compteur total
+                const totalCount = document.getElementById('totalCount');
+                if (totalCount) totalCount.textContent = pharmacies.length;
+
+                console.log('Pharmacies chargées:', pharmacies.length);
+
+            } catch (err) {
+                console.error('Erreur:', err);
+                alert('❌ Erreur JavaScript: ' + err.message);
+            }
+        }
+
+        // ─── Fonction pour générer le lien Google Maps ───
         function generateGoogleMapsLink(name, address, city, dept) {
-            // Construire l'adresse complète pour la géolocalisation
             const fullAddress = `${address}, ${city} ${dept}, France`;
-            // Utiliser l'API de géolocalisation de Google Maps pour obtenir des coordonnées précises
             return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
         }
-        
+
         // ─── Rendu des cartes ───
         function renderPharmacies(list) {
             const grid = document.getElementById('pharmaciesGrid');
@@ -381,6 +512,7 @@
                         <div class="no-results__icon">🔍</div>
                         <h3 class="no-results__title">Aucun résultat</h3>
                         <p>Aucune pharmacie ne correspond à votre recherche.<br>
+                        <strong>Données chargées: ${pharmacies.length} pharmacies</strong><br>
                         Essayez avec une autre ville ou un autre département.</p>
                     </div>
                 `;
@@ -408,24 +540,32 @@
         const pharmaciesResults = document.getElementById('pharmaciesResults');
         const resultsTitle = document.getElementById('resultsTitle');
         const searchInput = document.getElementById('searchInput');
-        const totalCount = document.getElementById('totalCount');
-        
-        // Met à jour le compteur total
-        totalCount.textContent = pharmacies.length;
 
         // ─── Filtrage en temps réel ───
         searchInput.addEventListener('input', function () {
             const query = this.value.toLowerCase().trim();
             
-            const filtered = pharmacies.filter(p =>
-                p.name.toLowerCase().includes(query) ||
-                p.city.toLowerCase().includes(query) ||
-                p.dept.includes(query) ||
-                p.address.toLowerCase().includes(query)
-            );
+            console.log('Recherche:', query);
+            console.log('Pharmacies disponibles:', pharmacies.length);
+
+            // Vérifie si les pharmacies sont chargées
+            if (pharmacies.length === 0) {
+                alert('Les pharmacies ne sont pas encore chargées. Attendez quelques secondes et réessayez.');
+                return;
+            }
+
+            const filtered = pharmacies.filter(p => {
+                const match = p.name.toLowerCase().includes(query) ||
+                    p.city.toLowerCase().includes(query) ||
+                    p.dept.includes(query) ||
+                    p.address.toLowerCase().includes(query);
+                return match;
+            });
             
+            console.log('Résultats filtrés:', filtered.length);
+
             renderPharmacies(filtered);
-            
+
             // Affiche les résultats si recherche active
             if (query.length > 0) {
                 pharmaciesResults.style.display = 'block';
@@ -435,7 +575,10 @@
             }
         });
 
-        // ─── Rendu initial (aucune pharmacie affichée par défaut) ───
+        // ─── Chargement initial ───
+        loadPharmacies();
+
+        // ─── Rendu initial (pas de résultats affichés par défaut) ───
         pharmaciesResults.style.display = 'none';
     </script>
 </body>
