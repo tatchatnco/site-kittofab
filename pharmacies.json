@@ -1,0 +1,2027 @@
+[
+  {
+    "PHARMACIES": "PHARMACIE POTIER",
+    "Adresse": "11 PLACE DU MARCHE",
+    "Complément d'adresse": "",
+    "Code postal": "29150",
+    "Ville": "CHATEAULIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA MAUVENDIERE",
+    "Adresse": "19 RUE DE LA MAUVENDIERE",
+    "Complément d'adresse": "",
+    "Code postal": "87000",
+    "Ville": "LIMOGES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PORTE DE LA LOIRE",
+    "Adresse": "26 RUE NATIONALE",
+    "Complément d'adresse": "",
+    "Code postal": "37000",
+    "Ville": "TOURS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE TRIOREAU",
+    "Adresse": "30 AVENUE DES CASSEAUX",
+    "Complément d'adresse": "PARKING INTERMARCHE",
+    "Code postal": "87000",
+    "Ville": "LIMOGES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA FONTAINE",
+    "Adresse": "4006 ROUTE NATIONALE 7",
+    "Complément d'adresse": "",
+    "Code postal": "83550",
+    "Ville": "VIDAUBAN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PROGRES LEPINEUX",
+    "Adresse": "3 RUE DE VERDUN",
+    "Complément d'adresse": "",
+    "Code postal": "23110",
+    "Ville": "EVAUX LES BAINS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PAYS D'EGLETONS",
+    "Adresse": "84 AVENUE CHARLES DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "19300",
+    "Ville": "EGLETONS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES REYNATS",
+    "Adresse": "58 AVENUE DES REYNATS",
+    "Complément d'adresse": "",
+    "Code postal": "24650",
+    "Ville": "CHANCELADE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PRINCIPALE OBJAT",
+    "Adresse": "36 AVENUE RAYMOND POINCARE",
+    "Complément d'adresse": "",
+    "Code postal": "19130",
+    "Ville": "OBJAT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'UNIVERSITE",
+    "Adresse": "76 AVENUE HENRI PIERRE KLOTZ",
+    "Complément d'adresse": "",
+    "Code postal": "72000",
+    "Ville": "LE MANS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CROISSY BEAUBOURG",
+    "Adresse": "ROND POINT ROCCASECCA",
+    "Complément d'adresse": "C.C INTERMARCHE",
+    "Code postal": "77183",
+    "Ville": "CROISSY BEAUBOURG",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PAILLER",
+    "Adresse": "8 PLACE DU PALAIS",
+    "Complément d'adresse": "",
+    "Code postal": "87300",
+    "Ville": "BELLAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE PONTLIEUE",
+    "Adresse": "4 PLACE ADRIEN TIRONNEAU",
+    "Complément d'adresse": "",
+    "Code postal": "72100",
+    "Ville": "LE MANS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU VAL DE SARTHE",
+    "Adresse": "ZA LES TRUNETIERES",
+    "Complément d'adresse": "PARKING SUPER U",
+    "Code postal": "72210",
+    "Ville": "LA SUZE SUR SARTHE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CENTRALE ROHMER",
+    "Adresse": "43 AVENUE LEFROIT DUPAIN",
+    "Complément d'adresse": "",
+    "Code postal": "52400",
+    "Ville": "BOURBONNE LES BAINS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE DE LA PART DIEU",
+    "Adresse": "10-12 BOULEVARD MARIUS VIVIER MERLE",
+    "Complément d'adresse": "CC DE LA PART DIEU COUR",
+    "Code postal": "69003",
+    "Ville": "LYON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'EGLISE",
+    "Adresse": "3 BIS PLACE DE L'EGLISE",
+    "Complément d'adresse": "",
+    "Code postal": "44730",
+    "Ville": "SAINT MICHEL CHEF CHEF",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES FORGES",
+    "Adresse": "6 QUARTIER JULIEN LEGRAND",
+    "Complément d'adresse": "",
+    "Code postal": "56650",
+    "Ville": "INZINZAC LOCHRIST",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA GARE Pornichet",
+    "Adresse": "2 AVENUE DU GENERALE DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "44380",
+    "Ville": "PORNICHET",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE ORAIN",
+    "Adresse": "37 RUE DE VERDUN",
+    "Complément d'adresse": "",
+    "Code postal": "44620",
+    "Ville": "LA MONTAGNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA MAIRIE",
+    "Adresse": "43 AVENUE GEORGES DUMAS",
+    "Complément d'adresse": "",
+    "Code postal": "87000",
+    "Ville": "LIMOGES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU CHER",
+    "Adresse": "3 BOULEVARD DE CORMERY",
+    "Complément d'adresse": "",
+    "Code postal": "37270",
+    "Ville": "AZAY SUR CHER",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES DUNES",
+    "Adresse": "9 RUE DU GENERAL DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "44250",
+    "Ville": "SAINT BREVIN LES PINS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA CAVAILLE",
+    "Adresse": "77 AVENUE DU GENERAL DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "24100",
+    "Ville": "BERGERAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA MAISON CARREE APRIUM",
+    "Adresse": "12 PLACE DE LA MAISON CARREE",
+    "Complément d'adresse": "",
+    "Code postal": "30000",
+    "Ville": "NIMES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE VANDAELE",
+    "Adresse": "84 PLACE DU GENERAL DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "59470",
+    "Ville": "WORMHOUT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MONTJOYEUX",
+    "Adresse": "CENTRE COMMERCIAL MONTJOYEUX",
+    "Complément d'adresse": "",
+    "Code postal": "37200",
+    "Ville": "TOURS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE ZANETTI",
+    "Adresse": "39 RUE JEAN JAURES",
+    "Complément d'adresse": "",
+    "Code postal": "62160",
+    "Ville": "BULLY LES MINES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE VERON",
+    "Adresse": "RUE MARIE LIETARD",
+    "Complément d'adresse": "C.C CARREFOUR",
+    "Code postal": "62800",
+    "Ville": "LIEVIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE NONNEVILLE",
+    "Adresse": "148 ROUTE DE BONDY",
+    "Complément d'adresse": "",
+    "Code postal": "93600",
+    "Ville": "AULNAY SOUS BOIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE TOULET",
+    "Adresse": "2 PLACE DE L'EGLISE",
+    "Complément d'adresse": "",
+    "Code postal": "77510",
+    "Ville": "VILLENEUVE SUR BELLOT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'ORVANNE",
+    "Adresse": "37 GRANDE RUE",
+    "Complément d'adresse": "",
+    "Code postal": "77940",
+    "Ville": "VOULX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE BAZOUGES",
+    "Adresse": "58 AVENUE DE LA DIVISION LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "53200",
+    "Ville": "CHATEAU GONTIER",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LA FONTAINE",
+    "Adresse": "37 AVENUE D'ESSOMES",
+    "Complément d'adresse": "C.C CARREFOUR",
+    "Code postal": "02400",
+    "Ville": "CHATEAU THIERRY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PRINCIPALE VERGT",
+    "Adresse": "10 PLACE MARLY",
+    "Complément d'adresse": "",
+    "Code postal": "24380",
+    "Ville": "VERGT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PROGRES",
+    "Adresse": "18 RUE SAINT AMBROISE",
+    "Complément d'adresse": "",
+    "Code postal": "77000",
+    "Ville": "MELUN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE BEAUSSIER",
+    "Adresse": "41 RUE DE LA LANDE",
+    "Complément d'adresse": "",
+    "Code postal": "49000",
+    "Ville": "ANGERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU MARCHE",
+    "Adresse": "24 RUE GASTON DARLEY",
+    "Complément d'adresse": "",
+    "Code postal": "77140",
+    "Ville": "NEMOURS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES DAMES",
+    "Adresse": "3 RUE AGNES SOREL",
+    "Complément d'adresse": "",
+    "Code postal": "37700",
+    "Ville": "LA VILLE AUX DAMES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE ALBANO MORETTI",
+    "Adresse": "1 RUE CASE NOVE",
+    "Complément d'adresse": "",
+    "Code postal": "20214",
+    "Ville": "CALENZANA",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES TERRILS",
+    "Adresse": "135 RUE JULES GUESDES",
+    "Complément d'adresse": "",
+    "Code postal": "62800",
+    "Ville": "LIEVIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE BREUIL LE VERT",
+    "Adresse": "32 RUE DES GRIVES",
+    "Complément d'adresse": "",
+    "Code postal": "60600",
+    "Ville": "BREUIL LE VERT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES FONTAINES",
+    "Adresse": "10 AVENUE JEAN MOULIN",
+    "Complément d'adresse": "",
+    "Code postal": "56150",
+    "Ville": "BAUD",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE WIZERNES",
+    "Adresse": "4 RUE FRANCOIS MITTERAND",
+    "Complément d'adresse": "",
+    "Code postal": "62570",
+    "Ville": "WIZERNES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA PLACE LECHAT",
+    "Adresse": "129 BOULEVARD SAINT AIGNAN",
+    "Complément d'adresse": "",
+    "Code postal": "44100",
+    "Ville": "NANTES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SAINT MEDARD",
+    "Adresse": "146 RUE MOUFFETARD",
+    "Complément d'adresse": "",
+    "Code postal": "75005",
+    "Ville": "PARIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LAMALGUE",
+    "Adresse": "189 BOULEVARD BAZEILLES",
+    "Complément d'adresse": "",
+    "Code postal": "83000",
+    "Ville": "TOULON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DETOISIEN",
+    "Adresse": "2 RUE DU DOCTEUR BINANT",
+    "Complément d'adresse": "",
+    "Code postal": "80250",
+    "Ville": "AILLY SUR NOYE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SAINT LAURENT",
+    "Adresse": "2 RUE DE LA REPUBLIQUE",
+    "Complément d'adresse": "",
+    "Code postal": "83190",
+    "Ville": "OLLIOULES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE PLOUEZOC'H",
+    "Adresse": "1 BIS ROUTE DE SAINT ANTOINE",
+    "Complément d'adresse": "",
+    "Code postal": "29252",
+    "Ville": "PLOUEZOC'H",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PASTEUR",
+    "Adresse": "9-11 RUE PASTEUR",
+    "Complément d'adresse": "",
+    "Code postal": "59870",
+    "Ville": "MARCHIENNES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SAINT ROCH",
+    "Adresse": "55 ALLEE SAINT ROCH",
+    "Complément d'adresse": "",
+    "Code postal": "59400",
+    "Ville": "CAMBRAI",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE HOREAU",
+    "Adresse": "25 RUE DE LA SEYNE",
+    "Complément d'adresse": "",
+    "Code postal": "82410",
+    "Ville": "SAINT ETIENNE DE TULMONT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PONTCARRE",
+    "Adresse": "85 BIS GRANDE RUE",
+    "Complément d'adresse": "",
+    "Code postal": "77135",
+    "Ville": "PONTCARRE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CENTRALE PELERIAUX",
+    "Adresse": "86 RUE DU GENERAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "62390",
+    "Ville": "AUXI LE CHATEAU",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PRINCIPALE D'OTHIS",
+    "Adresse": "AVENUE DU 8 MAI 1945",
+    "Complément d'adresse": "C.C INTERMARCHE",
+    "Code postal": "77280",
+    "Ville": "OTHIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CLEMENCEAU",
+    "Adresse": "12 PLACE CLEMENCEAU",
+    "Complément d'adresse": "",
+    "Code postal": "51400",
+    "Ville": "MOURMELON LE GRAND",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MAHIOUS",
+    "Adresse": "79 RUE GABRIEL PERI",
+    "Complément d'adresse": "",
+    "Code postal": "93200",
+    "Ville": "SAINT DENIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PONT DE PIERRE",
+    "Adresse": "3 RUE RACINE",
+    "Complément d'adresse": "",
+    "Code postal": "93000",
+    "Ville": "BOBIGNY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE OCEANE",
+    "Adresse": "5 RUE HENRI LETORT",
+    "Complément d'adresse": "",
+    "Code postal": "35290",
+    "Ville": "SAINT MEEN LE GRAND",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE KIMENAU",
+    "Adresse": "2 RUE DES ETANCHETTES",
+    "Complément d'adresse": "",
+    "Code postal": "51330",
+    "Ville": "GIVRY EN ARGONNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PLACE DE LA VICTOIRE",
+    "Adresse": "2 RUE DE LORRAINE",
+    "Complément d'adresse": "",
+    "Code postal": "88150",
+    "Ville": "THAON LES VOSGES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU HAUT PAYS",
+    "Adresse": "12 RUE DU MARECHAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "62310",
+    "Ville": "FRUGES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU FAUBOURG",
+    "Adresse": "93 ROUTE DEPARTEMENTALE 916",
+    "Complément d'adresse": "",
+    "Code postal": "59380",
+    "Ville": "QUAEDYPRE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA FLORANE",
+    "Adresse": "567 RUE DAVID",
+    "Complément d'adresse": "",
+    "Code postal": "83200",
+    "Ville": "TOULON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LE ROL",
+    "Adresse": "17 RUE MARIE CURIE",
+    "Complément d'adresse": "",
+    "Code postal": "44570",
+    "Ville": "TRIGNAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MALOUINE",
+    "Adresse": "RUE ARISTIDE BRIAND",
+    "Complément d'adresse": "",
+    "Code postal": "44550",
+    "Ville": "SAINT MALO DE GUERSAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMABUDGET PHARMACIE MACHEREZ",
+    "Adresse": "2 RUE DU DOCTEUR FRAGNE",
+    "Complément d'adresse": "",
+    "Code postal": "51000",
+    "Ville": "CHALONS EN CHAMPAGNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU CANAL",
+    "Adresse": "75 RUE DE LA REPUBLIQUE",
+    "Complément d'adresse": "",
+    "Code postal": "31290",
+    "Ville": "VILLEFRANCHE DE LAURAGAIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CARNOT",
+    "Adresse": "31 AVENUE LAZARE CARNOT",
+    "Complément d'adresse": "",
+    "Code postal": "83300",
+    "Ville": "DRAGUIGNAN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE KERBOETHAU",
+    "Adresse": "3 RUE SIMONE VEIL",
+    "Complément d'adresse": "",
+    "Code postal": "22470",
+    "Ville": "PLOUEZEC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MURACCIOLE-BRIZI",
+    "Adresse": "4 PLACE SAINT FRANCOIS 1ER",
+    "Complément d'adresse": "",
+    "Code postal": "20290",
+    "Ville": "BORGO",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LURI",
+    "Adresse": "LIEUT DIT PIAZZA",
+    "Complément d'adresse": "",
+    "Code postal": "20228",
+    "Ville": "LURI",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SABARTHEZ",
+    "Adresse": "4-6 4 RUE ANDRE DELORME",
+    "Complément d'adresse": "",
+    "Code postal": "80400",
+    "Ville": "EPPEVILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DBS",
+    "Adresse": "16 ROUTE DEPARTEMENTALE 1016",
+    "Complément d'adresse": "C.C CORA",
+    "Code postal": "60740",
+    "Ville": "SAINT MAXIMIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA PLACE (83)",
+    "Adresse": "6 PLACE EDOUARD SOLDANI",
+    "Complément d'adresse": "",
+    "Code postal": "83460",
+    "Ville": "LES ARCS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE BONNE FONT",
+    "Adresse": "30 BOULEVARD DES FERRIERES",
+    "Complément d'adresse": "",
+    "Code postal": "83490",
+    "Ville": "LE MUY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA VALLEE VIOLETTE",
+    "Adresse": "2 RUE DE MONTSOREAU",
+    "Complément d'adresse": "",
+    "Code postal": "37300",
+    "Ville": "JOUE LES TOURS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'HOTEL DE VILLE",
+    "Adresse": "3 RUE DE L'HOTEL DE VILLE ",
+    "Complément d'adresse": "",
+    "Code postal": "35890",
+    "Ville": "LAILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE BRIEC",
+    "Adresse": "PLACE DE RUTHIN",
+    "Complément d'adresse": "",
+    "Code postal": "29510",
+    "Ville": "BRIEC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU MOULIN NEUF",
+    "Adresse": "32 PARC DU MOULIN NEUF",
+    "Complément d'adresse": "",
+    "Code postal": "93240",
+    "Ville": "STAINS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU LOUVRE LENS",
+    "Adresse": "18 PLACE DU GENERAL DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "62300",
+    "Ville": "LENS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE GUILLEMET",
+    "Adresse": "7 BOULEVARD DE LINZ",
+    "Complément d'adresse": "",
+    "Code postal": "44210",
+    "Ville": "PORNIC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MONTJEANNAISE",
+    "Adresse": "4 AVENUE JEANNE D'ARC",
+    "Complément d'adresse": "",
+    "Code postal": "49570",
+    "Ville": "MAUGES SUR LOIRE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PEDARD",
+    "Adresse": "29 AVENUE CHOMERAC",
+    "Complément d'adresse": "",
+    "Code postal": "07000",
+    "Ville": "PRIVAS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "LA PHARMACIE PRINCIPALE ( de la vallée de l'isle)",
+    "Adresse": "4-6 PLACE DE LA REPUBLIQUE",
+    "Complément d'adresse": "",
+    "Code postal": "24110",
+    "Ville": "SAINT ASTIER",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE BAILLY",
+    "Adresse": "108-110 108 RUE SAINT LAZARE",
+    "Complément d'adresse": "",
+    "Code postal": "75008",
+    "Ville": "PARIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DESCARTES",
+    "Adresse": "7 AVENUE ANDRE MARIE AMPERE",
+    "Complément d'adresse": "",
+    "Code postal": "77420",
+    "Ville": "CHAMPS SUR MARNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU BEL AIR",
+    "Adresse": "30 PLACE DE L'AN 2000",
+    "Complément d'adresse": "",
+    "Code postal": "77380",
+    "Ville": "COMBS LA VILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA PORTE D'ESPAGNE",
+    "Adresse": "ROUTE D'ESPAGNE",
+    "Complément d'adresse": "C.C AUCHAN",
+    "Code postal": "66100",
+    "Ville": "PERPIGNAN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE CENON",
+    "Adresse": "1 PLACE MICHEL GAUDINEAU",
+    "Complément d'adresse": "",
+    "Code postal": "86530",
+    "Ville": "CENON SUR VIENNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHHARMACIE CHALOPIN MOREAU",
+    "Adresse": "35 RUE FRANCOIS MITTERAND",
+    "Complément d'adresse": "",
+    "Code postal": "87230",
+    "Ville": "CHALUS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE DE BATIGNOLLES",
+    "Adresse": "3 PLACE FRANCOISE DORIN",
+    "Complément d'adresse": "",
+    "Code postal": "75017",
+    "Ville": "PARIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LE FORESTIER",
+    "Adresse": "13 RUE DU FRICHE AUDOUIN",
+    "Complément d'adresse": "",
+    "Code postal": "44140",
+    "Ville": "AIGREFEUILLE SUR MAINE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU METRO RIQUET",
+    "Adresse": "60 AVENUE DE FLANDRE",
+    "Complément d'adresse": "",
+    "Code postal": "75019",
+    "Ville": "PARIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMAGREEN BOUCICAUT",
+    "Adresse": "95 RUE DE LA CONVENTION",
+    "Complément d'adresse": "",
+    "Code postal": "75015",
+    "Ville": "PARIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SANTOS DUMONT",
+    "Adresse": "1-3 RUE SANTOS DUMONT",
+    "Complément d'adresse": "",
+    "Code postal": "44300",
+    "Ville": "NANTES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU SOLEIL (92)",
+    "Adresse": "34 AVENUE PIERRE GRENIER",
+    "Complément d'adresse": "",
+    "Code postal": "92100",
+    "Ville": "BOULOGNE BILLANCOURT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU BELINOIS",
+    "Adresse": "10 RUE DU 8 MAI",
+    "Complément d'adresse": "",
+    "Code postal": "72220",
+    "Ville": "TELOCHE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE BENOIST",
+    "Adresse": "5 RUE GAMBETTA",
+    "Complément d'adresse": "",
+    "Code postal": "72220",
+    "Ville": "SAINT MARS D'OUTILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU SOLEIL (72)",
+    "Adresse": "LIEU DIT LE SOLEIL ROUTE DU MANS",
+    "Complément d'adresse": "Centre commercial",
+    "Code postal": "72220",
+    "Ville": "ECOMMOY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DORION",
+    "Adresse": "21 RUE DE L'HOTEL DE VILLE",
+    "Complément d'adresse": "",
+    "Code postal": "54260",
+    "Ville": "LONGUYON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE BOE AQUITAINE",
+    "Adresse": "20 AVENUE DE LACAPELETTE",
+    "Complément d'adresse": "",
+    "Code postal": "47550",
+    "Ville": "BOE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU ROND POINT",
+    "Adresse": "11 PLACE DE LA REVOLUTION",
+    "Complément d'adresse": "",
+    "Code postal": "47300",
+    "Ville": "VILLENEUVE SUR LOT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE TADDEI",
+    "Adresse": "MIGLIACCIARO",
+    "Complément d'adresse": "",
+    "Code postal": "20243",
+    "Ville": "PRUNELLI DI FIUMORBO",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LES MOISSONS",
+    "Adresse": "116 AVENUE PHILIPPE BUR",
+    "Complément d'adresse": "",
+    "Code postal": "77550",
+    "Ville": "MOISSY CRAMAYEL",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LE PIN",
+    "Adresse": "20 B RUE DE COURTRY",
+    "Complément d'adresse": "",
+    "Code postal": "77181",
+    "Ville": "LE PIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DUPRAT",
+    "Adresse": "93 AVENUE DES GRANDES GUIARDES",
+    "Complément d'adresse": "C.C LA RESISTANCE",
+    "Code postal": "17000",
+    "Ville": "LA ROCHELLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES CORMIERS",
+    "Adresse": "13 AVENUE MICHEL GOUTIER",
+    "Complément d'adresse": "",
+    "Code postal": "93160",
+    "Ville": "NOISY LE GRAND",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE HYEROISE",
+    "Adresse": "23 AVENUE DU GENRAL DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "83400",
+    "Ville": "HYERES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SACHOT",
+    "Adresse": "31 RUE DE LORRAINE",
+    "Complément d'adresse": "",
+    "Code postal": "88000",
+    "Ville": "DEYVILLERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA MARINE",
+    "Adresse": "QUAI PASCAL PAOLI ",
+    "Complément d'adresse": "",
+    "Code postal": "20137",
+    "Ville": "PORTO VECCHIO",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE SAINT GENCE",
+    "Adresse": "2 RUE JULES MICHELET",
+    "Complément d'adresse": "",
+    "Code postal": "87510",
+    "Ville": "SAINT GENCE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PAYS HAUT",
+    "Adresse": "95 RUE DE LONWY",
+    "Complément d'adresse": "",
+    "Code postal": "54720",
+    "Ville": "LEXY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE NOUZONNAISE",
+    "Adresse": "5 RUE EDOUARD VAILLANT",
+    "Complément d'adresse": "",
+    "Code postal": "08700",
+    "Ville": "NOUZONVILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU JARDIN",
+    "Adresse": "2 RUE DE LA RESISTANCE ",
+    "Complément d'adresse": "",
+    "Code postal": "09000",
+    "Ville": "FOIX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA GLANE",
+    "Adresse": "15 AVENUE DU 10 JUIN",
+    "Complément d'adresse": "",
+    "Code postal": "87520",
+    "Ville": "ORADOUR SUR GLANE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES CHARMETTES",
+    "Adresse": "HAMEAU DES CHARMETTES",
+    "Complément d'adresse": "C.C DES CHARMETTES",
+    "Code postal": "38120",
+    "Ville": "SAINT EGREVE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU CHAMPTOCEAUX",
+    "Adresse": "9 PLACE PAUL DELTOMBE",
+    "Complément d'adresse": "",
+    "Code postal": "49270",
+    "Ville": "OREE D'ANJOU",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PILORI",
+    "Adresse": "1 PLACE DU PILORI",
+    "Complément d'adresse": "",
+    "Code postal": "44000",
+    "Ville": "NANTES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES FEUX",
+    "Adresse": "20 RUE BOURNIZET",
+    "Complément d'adresse": "",
+    "Code postal": "08400",
+    "Ville": "VOUZIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE GUILLAUME",
+    "Adresse": "6 PLACE DE CHANZY",
+    "Complément d'adresse": "",
+    "Code postal": "08240",
+    "Ville": "BUZANCY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE D'ETREAUPONT",
+    "Adresse": "17 RUE DU GENERAL DE GAULLE",
+    "Complément d'adresse": "",
+    "Code postal": "02580",
+    "Ville": "ETREAUPONT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU FORT",
+    "Adresse": "197 RUE CAMILLE DESMOULINS",
+    "Complément d'adresse": "",
+    "Code postal": "02120",
+    "Ville": "GUISE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA CROIX",
+    "Adresse": "RUE LOUIS MARTIN",
+    "Complément d'adresse": "C.C ODYSSEE ",
+    "Code postal": "83420",
+    "Ville": "LA CROIX VALMER",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA FOUGERE",
+    "Adresse": "530 ROUTE DE BORDEAUX",
+    "Complément d'adresse": "",
+    "Code postal": "40230",
+    "Ville": "SAINT VINCENT DE TYROSSE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE VAL DU CHATEL",
+    "Adresse": "AVENUE DE VOULZIE",
+    "Complément d'adresse": "",
+    "Code postal": "77160",
+    "Ville": "PROVINS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CORREPHARM",
+    "Adresse": "35 ROUTE ARCHAMBAUD DE COMBORN",
+    "Complément d'adresse": "",
+    "Code postal": "19370",
+    "Ville": "CHAMBERET",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES 3 VALLEES",
+    "Adresse": "154 AVENUE DE LA ROQUE",
+    "Complément d'adresse": "C.C DES 3 VALLEES",
+    "Code postal": "24100",
+    "Ville": "CREYSSE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE COULOMMIERS",
+    "Adresse": "27 RUE BEAUREPAIRE",
+    "Complément d'adresse": "",
+    "Code postal": "77120",
+    "Ville": "COULOMMIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU MOULIN",
+    "Adresse": "9 PLACE VION TRESMES",
+    "Complément d'adresse": "",
+    "Code postal": "77515",
+    "Ville": "POMMEUSE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PONT DE LA VILLE",
+    "Adresse": "4 RUE DE LA PECHERIE",
+    "Complément d'adresse": "",
+    "Code postal": "77120",
+    "Ville": "COULOMMIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES MEZEREAUX",
+    "Adresse": "2 AVENUE DES CARMES",
+    "Complément d'adresse": "",
+    "Code postal": "77000",
+    "Ville": "MELUN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES MARGOTINS",
+    "Adresse": "102 BIS AVENUE DU GENERAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "77330",
+    "Ville": "OZOIR LA FERRIERE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU CHATEAU",
+    "Adresse": "12 RUE GAMBETTA",
+    "Complément d'adresse": "",
+    "Code postal": "77170",
+    "Ville": "BRIE COMTE ROBERT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'ESPERANCE",
+    "Adresse": "51 AVENUE DE VERDUN",
+    "Complément d'adresse": "",
+    "Code postal": "77470",
+    "Ville": "TRILPORT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU GRAND CHENE",
+    "Adresse": "RUE DE L'ABREUVOIR",
+    "Complément d'adresse": "CC BOIS L'EVEQUE",
+    "Code postal": "77380",
+    "Ville": "COMBS LA VILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU VIEUX PAYS",
+    "Adresse": "6 RUE DE LA GRANDE FERME",
+    "Complément d'adresse": "",
+    "Code postal": "77380",
+    "Ville": "COMBS LA VILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SAINT DAMIEN",
+    "Adresse": "457 RUE DES TROIS RODES",
+    "Complément d'adresse": "",
+    "Code postal": "77000",
+    "Ville": "VAUX LE PENIL",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE GRAND LITTORAL",
+    "Adresse": "2B RUE DE PERPOISE",
+    "Complément d'adresse": "C.C. SUPER U",
+    "Code postal": "85520",
+    "Ville": "JARD SUR MER",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE DU CENTRE",
+    "Adresse": "16 RUE DU GENERAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "77100",
+    "Ville": "MEAUX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MEAUX VICTOIRE",
+    "Adresse": "3 RUE GEORGES CLAUDE",
+    "Complément d'adresse": "",
+    "Code postal": "77100",
+    "Ville": "MEAUX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PRINCIPALE BASTIA",
+    "Adresse": "31 RUE CESAR CAMPINCHI",
+    "Complément d'adresse": "",
+    "Code postal": "20200",
+    "Ville": "BASTIA",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CHIVIT",
+    "Adresse": "3 BD JEAN JAURES",
+    "Complément d'adresse": "",
+    "Code postal": "24110",
+    "Ville": "ST LEON SUR L'ISLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA LEZE",
+    "Adresse": "5 RUE THEOPHILE DELCASSE",
+    "Complément d'adresse": "",
+    "Code postal": "09210",
+    "Ville": "LEZAT SUR LEZE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'ENTRE DEUX MERS",
+    "Adresse": "9 AV DE L 'ENTRE DEUX MERS",
+    "Complément d'adresse": "",
+    "Code postal": "33670",
+    "Ville": "CREON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA PALASSE",
+    "Adresse": "1 PLACE ROGER PIERRAT",
+    "Complément d'adresse": "",
+    "Code postal": "83100",
+    "Ville": "TOULON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU VAL DE BIEVRE",
+    "Adresse": "210 RUE ADOLPHE PAJEAUD",
+    "Complément d'adresse": "",
+    "Code postal": "92160",
+    "Ville": "ANTHONY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PONT ROYAL",
+    "Adresse": "212 AVENUE ARISTIDE BRIAND",
+    "Complément d'adresse": "",
+    "Code postal": "92220",
+    "Ville": "BAGNEUX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SAINT PIERRE DE CHIGNAC",
+    "Adresse": "LES GUICHOUX",
+    "Complément d'adresse": "",
+    "Code postal": "24330",
+    "Ville": "SAINT PIERRE DE CHIGNAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'ALMONT",
+    "Adresse": "22 BOULEVARD DE L'ALMONT",
+    "Complément d'adresse": "",
+    "Code postal": "77000",
+    "Ville": "MELUN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU MOUSTIER",
+    "Adresse": "1 AVENUE DU GENERAL DE GAULLE ",
+    "Complément d'adresse": "",
+    "Code postal": "77000",
+    "Ville": "VAUX LE PENIL",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PASTEL",
+    "Adresse": "ROUTE DE TICAILLE",
+    "Complément d'adresse": "C.C DU BARRY",
+    "Code postal": "31450",
+    "Ville": "AYGUESVIVES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES OISEAUX",
+    "Adresse": "AVENUE DES OISEAUX DE MER",
+    "Complément d'adresse": "",
+    "Code postal": "17140",
+    "Ville": "LAGORD",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MUTUALISTE",
+    "Adresse": "113 RUE DE LA REPUBLIQUE",
+    "Complément d'adresse": "",
+    "Code postal": "37110",
+    "Ville": "CHATEAU RENAULT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE VIRMOUT (unipharm44)",
+    "Adresse": "6 RUE DU VAL DE SEVRE",
+    "Complément d'adresse": "",
+    "Code postal": "44190",
+    "Ville": "BOUSSAY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA TOUR",
+    "Adresse": "14 AVENUE DU MIDI",
+    "Complément d'adresse": "",
+    "Code postal": "19240",
+    "Ville": "ALLASSAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA GARE",
+    "Adresse": "2 RUE DENIS PAPIN",
+    "Complément d'adresse": "",
+    "Code postal": "92600",
+    "Ville": "ASNIERES SUR SEINE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE CHARLEBOURG",
+    "Adresse": "1 AVENUE DE CHARLEBOURG",
+    "Complément d'adresse": "",
+    "Code postal": "92250 ",
+    "Ville": "LA GARENNE COLOMBES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'ORMEAU",
+    "Adresse": "2 RUE CHARLES FABRY",
+    "Complément d'adresse": "",
+    "Code postal": "77380",
+    "Ville": "COMBS LA VILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PICCOLO",
+    "Adresse": "24 ROUTE DE BRAY",
+    "Complément d'adresse": "",
+    "Code postal": "77650",
+    "Ville": "LONGUEVILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES GLYCINES",
+    "Adresse": "2 RUE DES ACACIAS",
+    "Complément d'adresse": "",
+    "Code postal": "85660",
+    "Ville": "SAINT PHILBERT DE BOUAINE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE MERMOZ",
+    "Adresse": "74 AVENUE DIDIER DAURAT",
+    "Complément d'adresse": "",
+    "Code postal": "64000",
+    "Ville": "PAU",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PATRIMOINE",
+    "Adresse": "81 RUE DU 22eme BMNA",
+    "Complément d'adresse": "",
+    "Code postal": "83260",
+    "Ville": "LA CRAU",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE BONAPARTE",
+    "Adresse": "262 AVENUE NAPOLEON BONAPARTE",
+    "Complément d'adresse": "",
+    "Code postal": "92500",
+    "Ville": "RUEIL MALMAISON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU CENTRE (LCCE)",
+    "Adresse": "80 RUE DU GENERAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "77450",
+    "Ville": "ESBLY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'OLIVIER",
+    "Adresse": "2 BOULEVARD GAMBETTA",
+    "Complément d'adresse": "",
+    "Code postal": "34800",
+    "Ville": "CLERMONT L'HERAULT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES HERBIERS",
+    "Adresse": " AVENUE DES CHAUVIERES ",
+    "Complément d'adresse": "GALERIE CC E LECLERC",
+    "Code postal": "85500",
+    "Ville": "LES HERBIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LE BORGNE",
+    "Adresse": "7 BOULEVARD DU GENERAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "53100",
+    "Ville": "MAYENNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE NOUVELLE",
+    "Adresse": "14 PLACE DES ALISIERS",
+    "Complément d'adresse": "",
+    "Code postal": "86550",
+    "Ville": "MIGNALOUX BEAUVOIR",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE 54",
+    "Adresse": "54 RUE DES BOURGUIGNONS",
+    "Complément d'adresse": "",
+    "Code postal": "92600",
+    "Ville": "ASNIERES SUR SEINE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SAINT SEB BOULEVARD",
+    "Adresse": "2 RUE PIERRE MENDES FRANCE",
+    "Complément d'adresse": "",
+    "Code postal": "44230",
+    "Ville": "SAINT SEBASTIEN SUR LOIRE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SYED",
+    "Adresse": "7 ALLEE LOUIS ARAGON",
+    "Complément d'adresse": "",
+    "Code postal": "93160",
+    "Ville": "NOISY LE GRAND",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE NOTRE DAME",
+    "Adresse": "45 AVENUE JEAN BAPTISTE CLEMENT",
+    "Complément d'adresse": "",
+    "Code postal": "92100",
+    "Ville": "BOULOGNE BILLANCOURT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES HAUTS DE SAINT-CLOUD",
+    "Adresse": "86 BOULEVARD DE LA REPUBLIQUE",
+    "Complément d'adresse": "",
+    "Code postal": "92210 ",
+    "Ville": "SAINT CLOUD",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE COSNES ET ROMAIN",
+    "Adresse": "20 BIS RUE DU DAUPHINE",
+    "Complément d'adresse": "",
+    "Code postal": "54400 ",
+    "Ville": "COSNES ET ROMAIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE CAPESTANG",
+    "Adresse": "1 RUE DE LA CAVE COOPERATIVE",
+    "Complément d'adresse": "",
+    "Code postal": "34310",
+    "Ville": "CAPESTANG",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE JACOBIN-CASSE",
+    "Adresse": "ANGLE RUE VACASSY",
+    "Complément d'adresse": "BOULEVARD DE LA REPUBLIQUE",
+    "Code postal": "34130",
+    "Ville": "MAUGUIO",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PRINCIPALE",
+    "Adresse": "PONT DE LORGUES",
+    "Complément d'adresse": "868 AVENUE PIERRE BROSSELETTE",
+    "Code postal": "83300",
+    "Ville": "DRAGUIGNAN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PONT DE BOIS",
+    "Adresse": "63 CHEMIN DU PONT DE BOIS",
+    "Complément d'adresse": "",
+    "Code postal": "83200",
+    "Ville": "TOULON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'ETAPE",
+    "Adresse": "126 RUE GRANDE",
+    "Complément d'adresse": "",
+    "Code postal": "77300",
+    "Ville": "FONTAINEBLEAU",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SARRADIN-BARLIER ( phie du centre commercial)",
+    "Adresse": "RUE LOUIS LEYDIER",
+    "Complément d'adresse": "Pharmacie du centre commercial",
+    "Code postal": "38780",
+    "Ville": "PONT EVEQUE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA QUINIERE",
+    "Adresse": "37 AVENUE DU MARECHAL  JUIN",
+    "Complément d'adresse": "",
+    "Code postal": "41000",
+    "Ville": "BLOIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PORT D'HYERES",
+    "Adresse": "23 AVENUE DU DOCTEUR ROBIN",
+    "Complément d'adresse": "",
+    "Code postal": "83400",
+    "Ville": "HYERES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PREISS",
+    "Adresse": "37 CHEMIN DE LAGARAUD",
+    "Complément d'adresse": "",
+    "Code postal": "30200",
+    "Ville": "BAGNOLS SUR CEZE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CENTRALE (Barthe et Campo)",
+    "Adresse": "94 RUE DU CARNOT",
+    "Complément d'adresse": "",
+    "Code postal": "40700",
+    "Ville": "HAGETMAU",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "HAPPYPHARMACIE DU CANNET",
+    "Adresse": "ROUTE NATIONALE 7",
+    "Complément d'adresse": "",
+    "Code postal": "83340",
+    "Ville": "LE CANNET DES MAURES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE REPUBLIQUE 57",
+    "Adresse": "2 AVENUE ROBERT SCHUMAN",
+    "Complément d'adresse": "",
+    "Code postal": "57000",
+    "Ville": "METZ",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE PARIS 72",
+    "Adresse": "30 RUE DE BOLTON",
+    "Complément d'adresse": "",
+    "Code postal": "72000",
+    "Ville": "LE MANS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU VALINCO",
+    "Adresse": "QUARTIER SANTA GIULIA  ",
+    "Complément d'adresse": "",
+    "Code postal": "20110",
+    "Ville": "PROPRIANO",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE D'ORLEANS",
+    "Adresse": "73 RUE D'ORLEANS",
+    "Complément d'adresse": "",
+    "Code postal": " 49400",
+    "Ville": "SAUMUR",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LINARDS",
+    "Adresse": "16 RUE HENRI LAGRANGE  ",
+    "Complément d'adresse": "",
+    "Code postal": "87130",
+    "Ville": "LINARDS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CHENE-MARSAUDON - QUESNEL (EYMPHARM)",
+    "Adresse": " 15 AVENUE DE LA PAIX  ",
+    "Complément d'adresse": "",
+    "Code postal": "87120",
+    "Ville": "EYMOUTIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE TCHAMBA",
+    "Adresse": "33 AVENUE JEAN JAURES  ",
+    "Complément d'adresse": "",
+    "Code postal": "93310",
+    "Ville": "LE PRE-SAINT-GERVAIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE BEAUREGARD",
+    "Adresse": "69 AVENUE DU 18 JUIN 1940  ",
+    "Complément d'adresse": "",
+    "Code postal": "92500",
+    "Ville": "RUEIL-MALMAISON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE SAINT SAVIN",
+    "Adresse": "240 RUE DES AUBERGES  ",
+    "Complément d'adresse": "",
+    "Code postal": "38300",
+    "Ville": "SAINT-SAVIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA FAIENCERIE",
+    "Adresse": "15 AVENUE DU GENERAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "92340",
+    "Ville": "BOURG LA REINE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA MAISON BLANCHE",
+    "Adresse": "6 AVENUE SAINT EXUPERY",
+    "Complément d'adresse": "",
+    "Code postal": "92320",
+    "Ville": "CHATILLON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PAPI STEFANI",
+    "Adresse": " ARENA",
+    "Complément d'adresse": "",
+    "Code postal": "20215",
+    "Ville": "VESCOVATO",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMCIE APRIUM GIUMETTI BARTOLI",
+    "Adresse": "T10 ",
+    "Complément d'adresse": "",
+    "Code postal": "20144 ",
+    "Ville": "ZONZA",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA MOULETTE",
+    "Adresse": "102 Avenue PASTEUR",
+    "Complément d'adresse": "",
+    "Code postal": "24100",
+    "Ville": "BERGERAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU LYCEE",
+    "Adresse": "AVENUE RHEINBACH",
+    "Complément d'adresse": "",
+    "Code postal": "30400 ",
+    "Ville": "VILLENEUVE-LES-AVIGNON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE VERRIERES",
+    "Adresse": "11 RUE DE PROVENCE ",
+    "Complément d'adresse": "",
+    "Code postal": "86410 ",
+    "Ville": "VERRIERES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU VAL SAINT JEAN",
+    "Adresse": "ROUTE DE TORIGNI",
+    "Complément d'adresse": "CENTRE COMMERCIAL CARREFOUR",
+    "Code postal": "50000",
+    "Ville": "SAINT LO",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES ILES",
+    "Adresse": "1 AVENUE DU TOURING CLUB",
+    "Complément d'adresse": "",
+    "Code postal": "83700",
+    "Ville": "SAINT RAPHAEL",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE ORSINI",
+    "Adresse": "ROUTE RN 198",
+    "Complément d'adresse": "",
+    "Code postal": "20145",
+    "Ville": "SARI SOLENZARA",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE GUILLAIN",
+    "Adresse": "34 BIS AVENUE MARCEAU",
+    "Complément d'adresse": "",
+    "Code postal": "92400",
+    "Ville": "COURBEVOIE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MARTIANO",
+    "Adresse": "38 RUE GODEFROY",
+    "Complément d'adresse": "",
+    "Code postal": "92800",
+    "Ville": "PUTEAUX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CHAULIEU",
+    "Adresse": "167 PLACE ARISTIDE BRIAND  ",
+    "Complément d'adresse": "",
+    "Code postal": "84210 ",
+    "Ville": "PERNES-LES-FONTAINES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE GEORGES",
+    "Adresse": "178 BOULEVARD VOLTAIRE",
+    "Complément d'adresse": "",
+    "Code postal": "92600",
+    "Ville": "ASNIERES SUR SEINE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CENTRALE GINDRE BERNADAC",
+    "Adresse": "667 RUE CENTRALE  ",
+    "Complément d'adresse": "",
+    "Code postal": "01370",
+    "Ville": "SAINT-ETIENNE-DU-BOIS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DEMOULIN",
+    "Adresse": "696 AVENUE DES ROCHES BLANCHES",
+    "Complément d'adresse": "",
+    "Code postal": "84570",
+    "Ville": "MORMOIRON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU SQUARE",
+    "Adresse": "43 RUE GAMBETTA",
+    "Complément d'adresse": "",
+    "Code postal": "77500",
+    "Ville": "CHELLES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES BUISSONNETS",
+    "Adresse": "LE GRAND PRE",
+    "Complément d'adresse": "",
+    "Code postal": "79310",
+    "Ville": "MAZIERES EN GATINE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE BLEUZEN",
+    "Adresse": "35 RUE JEAN BLEUZEN",
+    "Complément d'adresse": "",
+    "Code postal": "92170",
+    "Ville": "VANVES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHAMACIE DE LA PLACE (92)",
+    "Adresse": "6 AVENUE JEAN JAURES  ",
+    "Complément d'adresse": "",
+    "Code postal": "92120",
+    "Ville": "MONTROUGE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE FRONCLES",
+    "Adresse": "19 RUE DU 1ER MAI  ",
+    "Complément d'adresse": "",
+    "Code postal": "52320",
+    "Ville": "FRONCLES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SABRINA STOUVENIN (PHARMACIE STOUVENIN)",
+    "Adresse": "13 RUE MAURICE BARRES",
+    "Complément d'adresse": "",
+    "Code postal": "88130",
+    "Ville": "CHARMES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES PORTES DE LA FORET",
+    "Adresse": "37 RUE DE LA REPUBLIQUE",
+    "Complément d'adresse": "",
+    "Code postal": "88260",
+    "Ville": "DARNEY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA MARNE",
+    "Adresse": "24 AVENUE DE LA MARNE",
+    "Complément d'adresse": "",
+    "Code postal": "52300",
+    "Ville": "JOINVILLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE VICTOR HUGO",
+    "Adresse": "88 AVENUE VICTOR HUGO",
+    "Complément d'adresse": "",
+    "Code postal": "16100",
+    "Ville": "COGNAC",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "SELAS LIMPHARM PHARMACIE DE LA MAZELLE",
+    "Adresse": "8 AVENUE DU 14 JUILLET",
+    "Complément d'adresse": "",
+    "Code postal": "87570",
+    "Ville": "RILHAC-RANCON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE REVOL",
+    "Adresse": "136-139 AVENUE DE CAHORS",
+    "Complément d'adresse": "",
+    "Code postal": "24150",
+    "Ville": "COUZE ET SAINT FRONT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE BONNELLES",
+    "Adresse": "4 B CHEMIN DES CLOS",
+    "Complément d'adresse": "",
+    "Code postal": "78830",
+    "Ville": "BONNELLES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PAYS D'APT",
+    "Adresse": "308 AVENUE DE LA LIBERATION  ",
+    "Complément d'adresse": "",
+    "Code postal": "84400",
+    "Ville": "APT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CENTRALE MATTIONI",
+    "Adresse": "7 PLACE SALVADOR ALLENDE",
+    "Complément d'adresse": "",
+    "Code postal": "77290",
+    "Ville": "MITRY MORY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PARC SAINT JEAN",
+    "Adresse": "28 AVENUE  GENERAL LECLERC",
+    "Complément d'adresse": "",
+    "Code postal": "77400",
+    "Ville": "LAGNY SUR MARNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU VAL DE GORRE",
+    "Adresse": "26 RUE JEAN JAURES",
+    "Complément d'adresse": "",
+    "Code postal": "87310",
+    "Ville": "SAINT-LAURENT-SUR-GORRE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE SAMPOUX",
+    "Adresse": "197 AVENUE WINSTON CHURCHILL",
+    "Complément d'adresse": "",
+    "Code postal": "24660",
+    "Ville": "COULOUNIEIX-CHAMIERS ",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LA JALLE",
+    "Adresse": "34 AVENUE DESCARTES",
+    "Complément d'adresse": "",
+    "Code postal": "33160",
+    "Ville": "SAINT MEDARD EN JALLES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES 3 CHATEAUX",
+    "Adresse": "8 PLACE DE LA LIBERATION",
+    "Complément d'adresse": "",
+    "Code postal": "26130",
+    "Ville": "ST PAUL TROIS CHATEAUX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE MERLINES",
+    "Adresse": "2 PLACE DE LA REPUBLIQUE  ",
+    "Complément d'adresse": "",
+    "Code postal": "19340",
+    "Ville": "MERLINES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE PARISOT (Pharmacorp)",
+    "Adresse": "4 PLACE KERESTEDJIAN - FAURE  ",
+    "Complément d'adresse": "",
+    "Code postal": "82160",
+    "Ville": "PARISOT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE VALLEE DU SOR",
+    "Adresse": "81 RUE DU THERON",
+    "Complément d'adresse": "",
+    "Code postal": "81570",
+    "Ville": "SEMALENS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE ADAM (de la Halle)",
+    "Adresse": "50 RUE NATIONALE  ",
+    "Complément d'adresse": "",
+    "Code postal": "47110",
+    "Ville": "SAINTE-LIVRADE-SUR-LOT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE LOLYA",
+    "Adresse": "5 AVENUE DES MARTYRS DE LA RESISTANCE",
+    "Complément d'adresse": "",
+    "Code postal": "47200",
+    "Ville": "MARMANDE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CHOLLET",
+    "Adresse": "15 RUE DES GRANGES  ",
+    "Complément d'adresse": "",
+    "Code postal": "79400",
+    "Ville": "SAINT-MAIXENT-L'ECOLE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "GRANDE PHARMACIE DE L'ALHAMBRA",
+    "Adresse": "700 AVENUE JEAN MOULIN",
+    "Complément d'adresse": "",
+    "Code postal": "82000",
+    "Ville": "MONTAUBAN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE PLACE DE FRANCE",
+    "Adresse": "CENTRE COMMERCIAL SAINT CYPRIEN",
+    "Complément d'adresse": "PLACE DE FRANCE",
+    "Code postal": "86000",
+    "Ville": "POITIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU COUREAU",
+    "Adresse": "10 RUE GEORGES CLEMENCEAU",
+    "Complément d'adresse": "",
+    "Code postal": "17480",
+    "Ville": "LE CHATEAU D'OLERON",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE L'OLYMPIA",
+    "Adresse": "132 AVENUE GAMBETTA  ",
+    "Complément d'adresse": "",
+    "Code postal": "17100",
+    "Ville": "SAINTES",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE CHATILLON",
+    "Adresse": "2 BOULEVARD DU THOUET  ",
+    "Complément d'adresse": "",
+    "Code postal": "79200",
+    "Ville": "CHATILLON-SUR-THOUET",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE LES ROSIERES",
+    "Adresse": "PH 6 RUE DU MARECHAL JOFFRE  ",
+    "Complément d'adresse": "",
+    "Code postal": "79800",
+    "Ville": "LA MOTHE-SAINT-HERAY",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU PONTREAU",
+    "Adresse": "40 RUE BREMAUDIERE  ",
+    "Complément d'adresse": "",
+    "Code postal": "79000",
+    "Ville": "NIORT",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DU GEANT CASINO",
+    "Adresse": "2 AVENUE DE LAFAYETTE",
+    "Complément d'adresse": "",
+    "Code postal": "86000",
+    "Ville": "POITIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE CHEVILLON",
+    "Adresse": "3 RUE CARNOT  ",
+    "Complément d'adresse": "",
+    "Code postal": "85300",
+    "Ville": "CHALLANS",
+    "Pays": ""
+  },
+  {
+    "PHARMACIES": "PHARMACIE BOUET",
+    "Adresse": "4 RUE SAINT ROMAIN",
+    "Complément d'adresse": "",
+    "Code postal": "86220",
+    "Ville": "DANGE ST ROMAIN",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE L'ENVIGNE",
+    "Adresse": "11 place du general Pierre",
+    "Complément d'adresse": "",
+    "Code postal": "86140",
+    "Ville": "LENCLOITRE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DES ROCS",
+    "Adresse": "382 AVENUE DE NANTES  ",
+    "Complément d'adresse": "",
+    "Code postal": "86000",
+    "Ville": "POITIERS",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE ONGI IZAN",
+    "Adresse": "CENTRE CCIAL LECLERC RN 10 ROUTE DE SOUHARA  ",
+    "Complément d'adresse": "",
+    "Code postal": "64122",
+    "Ville": "URRUGNE",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE DE PARIS",
+    "Adresse": "6 AVENUE DE PARIS ",
+    "Complément d'adresse": "",
+    "Code postal": "79000",
+    "Ville": "NIORT CEDEX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "LA PHARMACIE DU LAC",
+    "Adresse": "2014 AVENUE DE LA RESISTANCE ",
+    "Complément d'adresse": "",
+    "Code postal": "40990",
+    "Ville": "SAINT-PAUL-LES-DAX",
+    "Pays": "France"
+  },
+  {
+    "PHARMACIES": "PHARMACIE MOUTRON",
+    "Adresse": "2 bis Rue Léon Gambetta ",
+    "Complément d'adresse": "",
+    "Code postal": "40510 ",
+    "Ville": "SEIGNOSSE",
+    "Pays": "France"
+  }
+]
+
