@@ -8,54 +8,131 @@
     <meta name="description" content="Find a pharmacy near you that sells GlycoSafe. More than 250 partner pharmacies in France. Search by city, department or name.">
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        /* ─── Page spécifique — Liste des pharmacies ─── */
-        .search-section {
-            background: var(--color-gray-100);
-            padding: 2rem 1.5rem;
-            border-bottom: 1px solid var(--color-gray-200);
+        /* ═══ Modern & fun search zone ═══ */
+        .search-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #e91e63 50%, #ff7f00 75%, #00aeef 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            padding: 4rem 1.5rem 6rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        .search-bar {
-            max-width: 700px;
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .search-hero__content {
+            max-width: 800px;
             margin: 0 auto;
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .search-bar__input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.9rem 1.2rem;
-            border: 2px solid var(--color-gray-300);
-            border-radius: var(--radius-pill);
-            font-family: inherit;
-            font-size: var(--text-body);
-            color: var(--color-black);
-            background: var(--color-pure-white);
-            outline: none;
-            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-        }
-
-        .search-bar__input:focus {
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.12);
-        }
-
-        .search-bar__input::placeholder {
-            color: var(--color-gray-400);
-        }
-
-        .search-counter {
             text-align: center;
-            margin-top: 1rem;
-            font-size: var(--text-small);
-            color: var(--color-gray-500);
+            position: relative;
+            z-index: 2;
         }
 
-        .search-counter strong {
-            color: var(--color-primary);
+        .search-hero__title {
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 0.75rem;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+        }
+
+        .search-hero__highlight {
+            background: linear-gradient(90deg, #fff, #ffd700, #fff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shine 2s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .search-hero__subtitle {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .search-hero__subtitle strong {
+            background: white;
+            color: #e91e63;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
             font-weight: 700;
+        }
+
+        .search-box {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-box__input {
+            width: 100%;
+            padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            font-family: inherit;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2), 0 0 0 4px rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .search-box__input:focus {
+            transform: scale(1.02) translateY(-2px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 0 6px rgba(233, 30, 99, 0.3), inset 0 0 20px rgba(233, 30, 99, 0.1);
+        }
+
+        .search-box__input::placeholder {
+            color: #888;
+        }
+
+        .search-box__icon {
+            position: absolute;
+            left: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.3rem;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .search-box__sparkles {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.5; transform: translateY(-50%) scale(1); }
+            50% { opacity: 1; transform: translateY(-50%) scale(1.2); }
+        }
+
+        .search-waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            line-height: 0;
+        }
+
+        .search-waves svg {
+            display: block;
+            width: 100%;
+            height: auto;
         }
 
         /* ─── Grille des pharmacies ─── */
@@ -225,15 +302,35 @@
         </p>
     </section>
 
-    <!-- Search Bar -->
-    <div class="search-section">
-        <div class="search-bar">
-            <input type="text" id="searchInput" class="search-bar__input" placeholder="🔍 Search by city, pharmacy name or department..." autocomplete="off">
+    <!-- ═══ Modern & fun search zone ═══ -->
+    <section class="search-hero">
+        <div class="search-hero__content">
+            <h2 class="search-hero__title">
+                Find your pharmacy <span class="search-hero__highlight">Quickly</span> !
+            </h2>
+            <p class="search-hero__subtitle">
+                More than <strong id="totalCount">250</strong> partner pharmacies throughout France
+            </p>
+            
+            <div class="search-box">
+                <div class="search-box__icon">🔍</div>
+                <input
+                    type="text"
+                    class="search-box__input"
+                    id="searchInput"
+                    placeholder="Type a city, postal code or name..."
+                    autocomplete="off"
+                >
+                <div class="search-box__sparkles">✨</div>
+            </div>
         </div>
-        <p class="search-counter">
-            <strong id="totalCount">6</strong> pharmacies partners throughout France
-        </p>
-    </div>
+        
+        <div class="search-waves">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#fbfbfd"/>
+            </svg>
+        </div>
+    </section>
 
     <!-- Pharmacy List (hidden by default) -->
     <section class="section section--light" id="pharmaciesResults" style="display: none;">
@@ -316,33 +413,42 @@
         // ─── Supabase Configuration ───
         const supabaseUrl = 'https://ubbrxhjilvugjjyewixy.supabase.co';
         const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InViYnJ4aGppbHZ1Z2pqeWV3aXh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3MjA3ODQsImV4cCI6MjA5MTI5Njc4NH0.0GqNQ58JsNCet_UOTuPgLXhw4KE05HSMRsfhf76z268';
-        const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+        const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
 
         // ─── Pharmacy data (loaded from Supabase) ───
         let pharmacies = [];
 
         // ─── Load pharmacies from Supabase ───
         async function loadPharmacies() {
-            const { data, error } = await supabase
-                .from('pharmacies')
-                .select('*');
+            try {
+                const { data, error } = await supabaseClient
+                    .from('pharmacies')
+                    .select('*');
 
-            if (error) {
-                console.error('Supabase error:', error);
-                return;
+                if (error) {
+                    console.error('Supabase error:', error);
+                    alert('❌ Connection error: ' + error.message);
+                    return;
+                }
+
+                if (!data || data.length === 0) {
+                    alert('⚠️ The pharmacies table is empty');
+                    return;
+                }
+
+                pharmacies = data.map(p => ({
+                    name: p.nom,
+                    address: p.adresse,
+                    city: p.ville,
+                    dept: p.code_postal
+                }));
+
+                const totalCount = document.getElementById('totalCount');
+                if (totalCount) totalCount.textContent = pharmacies.length;
+            } catch (err) {
+                console.error('Error:', err);
+                alert('❌ JavaScript error: ' + err.message);
             }
-
-            // Convert Supabase format to expected format
-            pharmacies = data.map(p => ({
-                name: p.nom,
-                address: p.adresse,
-                city: p.ville,
-                dept: p.cp
-            }));
-
-            // Update total counter
-            const totalCount = document.getElementById('totalCount');
-            if (totalCount) totalCount.textContent = pharmacies.length;
         }
 
         // ─── Function to generate Google Maps link ───

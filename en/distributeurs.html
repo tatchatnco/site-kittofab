@@ -62,35 +62,86 @@
                 <div class="chart-bars" style="display: flex; flex-direction: column; gap: 1rem;">
                     <!-- Europe Bar -->
                     <div class="chart-row" style="display: flex; align-items: center; gap: 1rem;">
-                        <span style="font-size: 1.5rem; min-width: 40px;">🇪🇺</span>
+                        <span class="chart-flag" style="font-size: 1.5rem; min-width: 40px;">🇪🇺</span>
                         <div class="bar-container" style="flex: 1; background: var(--color-gray-200); border-radius: var(--radius-pill); height: 40px; overflow: hidden; position: relative;">
                             <div class="bar-fill" data-width="75" style="height: 100%; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); border-radius: var(--radius-pill); width: 0; transition: width 1800ms cubic-bezier(0.33, 1, 0.68, 1); display: flex; align-items: center; justify-content: flex-end; padding-right: 1rem;">
-                                <span style="color: white; font-weight: 700; font-size: 0.9rem;">+15%/year</span>
+                                <span class="bar-label" style="color: white; font-weight: 700; font-size: 0.9rem;">+15%/year</span>
                             </div>
                         </div>
                     </div>
                     
                     <!-- France Bar -->
                     <div class="chart-row" style="display: flex; align-items: center; gap: 1rem;">
-                        <span style="font-size: 1.5rem; min-width: 40px;">🇫🇷</span>
+                        <span class="chart-flag" style="font-size: 1.5rem; min-width: 40px;">🇫🇷</span>
                         <div class="bar-container" style="flex: 1; background: var(--color-gray-200); border-radius: var(--radius-pill); height: 40px; overflow: hidden; position: relative;">
                             <div class="bar-fill" data-width="85" style="height: 100%; background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%); border-radius: var(--radius-pill); width: 0; transition: width 1800ms cubic-bezier(0.33, 1, 0.68, 1); display: flex; align-items: center; justify-content: flex-end; padding-right: 1rem;">
-                                <span style="color: white; font-weight: 700; font-size: 0.9rem;">+10% to +16%/year</span>
+                                <span class="bar-label" style="color: white; font-weight: 700; font-size: 0.9rem;">+10% to +16%/year</span>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Market FR Bar -->
                     <div class="chart-row" style="display: flex; align-items: center; gap: 1rem;">
-                        <span style="font-size: 1.5rem; min-width: 40px;">🇫🇷</span>
+                        <span class="chart-flag" style="font-size: 1.5rem; min-width: 40px;">🇫🇷</span>
                         <div class="bar-container" style="flex: 1; background: var(--color-gray-200); border-radius: var(--radius-pill); height: 40px; overflow: hidden; position: relative;">
-                            <div class="bar-fill" data-width="100" style="height: 100%; background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); border-radius: var(--radius-pill); width: 0; transition: width 1800ms cubic-bezier(0.33, 1, 0.68, 1); display: flex; align-items: center; justify-content: center;">
-                                <span style="color: white; font-weight: 700; font-size: 0.9rem;">€450M in 2026 → €650M by 2030</span>
+                            <div class="bar-fill bar-fill--market" data-width="100" style="height: 100%; background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); border-radius: var(--radius-pill); width: 0; transition: width 1800ms cubic-bezier(0.33, 1, 0.68, 1); display: flex; align-items: center; justify-content: center;">
+                                <span class="bar-label bar-label--market" style="color: white; font-weight: 700; font-size: 0.9rem; text-align: center;">€450M in 2026 → €650M by 2030</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <style>
+                /* Responsive styles for CGM chart */
+                @media (max-width: 768px) {
+                    .cgm-chart {
+                        padding: 1rem !important;
+                        margin: 2rem auto !important;
+                    }
+                    
+                    .chart-row {
+                        flex-direction: column !important;
+                        align-items: stretch !important;
+                        gap: 0.5rem !important;
+                    }
+                    
+                    .chart-flag {
+                        font-size: 1.2rem !important;
+                        min-width: auto !important;
+                        text-align: center;
+                    }
+                    
+                    .bar-container {
+                        height: 50px !important;
+                    }
+                    
+                    .bar-label {
+                        font-size: 0.75rem !important;
+                        padding: 0 0.5rem !important;
+                        text-align: center;
+                        width: 100%;
+                        justify-content: center !important;
+                    }
+                    
+                    .bar-label--market {
+                        font-size: 0.7rem !important;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .bar-label--market {
+                        font-size: 0.65rem !important;
+                    }
+                    
+                    .bar-label {
+                        font-size: 0.7rem !important;
+                    }
+                }
+            </style>
 
             <div class="stats-banner reveal reveal-delay-3">
                 <div class="stat">
