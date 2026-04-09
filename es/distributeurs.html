@@ -238,8 +238,9 @@
                 <span class="section__eyebrow reveal">Asociación</span>
                 <h2 class="section__title section__title--center reveal reveal-delay-1">Conviértase en distribuidor homologado.</h2>
             </div>
-            <form class="form reveal reveal-delay-2" id="distribForm" action="mailto:kittofab@gmail.com" method="post"
-                enctype="text/plain">
+            <form class="form reveal reveal-delay-2" id="distribForm" name="distributeur-contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="distributeur-contact">
+                <input type="hidden" name="bot-field" />
                 <div class="form__row">
                     <div class="form__group">
                         <label class="form__label" for="d-nom">Nombre</label>
