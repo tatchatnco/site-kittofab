@@ -15,7 +15,7 @@
       <a href="index.html" class="nav__logo">
         <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
       </a>
-      <div class="nav__links" id="navLinks" style="gap:1rem;">
+      <div class="nav__links nav__links--gap" id="navLinks">
         <a href="index.html">Home</a>
         <a href="produit.html" class="active">Product</a>
         <a href="pharmacies.html">Pharmacy</a>
@@ -25,7 +25,7 @@
         <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Find a pharmacy</a>
         <a href="#produit-situation" class="nav__cta">Order</a>
       </div>
-      <div class="nav__lang" style="margin-left:0.5rem;">
+      <div class="nav__lang nav__lang--margin">
         <select id="langSelect" onchange="changeLanguage(this.value)">
           <option value="fr">FR</option>
           <option value="en" selected>EN</option>
@@ -60,15 +60,15 @@
                     <p>Continuous sensor wear is a revolution in glucose monitoring.<br>But keeping it in place remains a daily challenge.<br>Skin irritation and allergies to adhesive patches are a daily reality for many patients.</p>
                     <p>Patch removal damages the skin.<br>Water compromises hold.<br>Clothes catch on it.<br>The sensor eventually detaches or gets ripped off.</p>
                 </div>
-                <div class="split__content reveal reveal-delay-2" style="text-align:center;">
-                    <div class="card" style="background:var(--color-gray-900);text-align:left;">
-                        <h3 class="card__title" style="color:var(--color-accent);margin-bottom:1rem;">The limits of patches</h3>
+                <div class="split__content reveal reveal-delay-2 text-center">
+                    <div class="card bg-gray-900 text-left">
+                        <h3 class="card__title text-accent mb-1">The limits of patches</h3>
                         <ul class="split__list">
-                            <li style="color:var(--color-gray-400)">Allergic reactions and skin irritation</li>
-                            <li style="color:var(--color-gray-400)">Detachment in water and from sweating</li>
-                            <li style="color:var(--color-gray-400)">Sticky residue on skin</li>
-                            <li style="color:var(--color-gray-400)">Single use, recurring cost</li>
-                            <li style="color:var(--color-gray-400)">Involuntary tearing by clothes</li>
+                            <li class="text-gray-400">Allergic reactions and skin irritation</li>
+                            <li class="text-gray-400">Detachment in water and from sweating</li>
+                            <li class="text-gray-400">Sticky residue on skin</li>
+                            <li class="text-gray-400">Single use, recurring cost</li>
+                            <li class="text-gray-400">Involuntary tearing by clothes</li>
                         </ul>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     KittOFab offers a technological breakthrough.<br>A technical protective bracelet that secures your sensor without any adhesive contact with the skin.
                 </p>
             </div>
-            <div class="grid grid--2" style="max-width:900px;margin:0 auto;">
+            <div class="grid grid--2 grid--center">
                 <div class="card reveal reveal-delay-1">
                     <div class="card__icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
@@ -155,7 +155,7 @@
 
     <!-- Multi-angle gallery -->
     <section class="section section--dark">
-        <div class="section__inner" style="text-align:center;margin-bottom:3rem;">
+        <div class="section__inner text-center mb-3">
             <span class="section__eyebrow reveal">The range</span>
             <h2 class="section__title section__title--center reveal reveal-delay-1">8 colors. One single goal.</h2>
             <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
@@ -187,8 +187,8 @@
                     <thead>
                         <tr>
                             <th>Criteria</th>
-                            <th class="highlight-col" style="color:#4caf50;font-size:1.1rem;">GlycoSafe</th>
-                            <th style="color:#42a5f5;font-size:1.1rem;">Adhesive patch</th>
+                            <th class="highlight-col text-success">GlycoSafe</th>
+                            <th class="text-info">Adhesive patch</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -230,7 +230,7 @@
 
     <!-- Compatibility -->
     <section class="section section--dark" id="compatibilite">
-        <div class="section__inner section__inner--narrow" style="text-align:center;">
+        <div class="section__inner section__inner--narrow text-center">
             <span class="section__eyebrow reveal">Compatibility</span>
             <h2 class="section__title section__title--center reveal reveal-delay-1">Compatible with your sensors.</h2>
             <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
@@ -357,7 +357,7 @@
     <div class="footer__inner">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div style="display:inline-block; margin-bottom:1rem;">
+          <div class="inline-block mb-1">
             <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
           </div>
           <p>Diabetes without complexes, for a life without limits. French innovation for glucose sensor protection.</p>
@@ -380,25 +380,14 @@
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>
-      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+      <div class="footer__bottom footer__bottom--clean">
         <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
         <span>European patent pending</span>
-        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. All rights reserved.</span>
+        <span class="footer__copyright"> 2026 KittoFab. All rights reserved.</span>
       </div>
     </div>
   </footer>
 
     <script src="../js/main.js"></script>
-    <script>
-        function changeLanguage(lang) {
-            if (lang === 'fr') {
-                window.location.href = '../produit.html';
-            } else if (lang === 'en') {
-                window.location.href = 'produit.html';
-            } else if (lang === 'es') {
-                window.location.href = '../es/produit.html';
-            }
-        }
-    </script>
 </body>
 </html>

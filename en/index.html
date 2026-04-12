@@ -15,7 +15,7 @@
       <a href="index.html" class="nav__logo">
         <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
       </a>
-      <div class="nav__links" id="navLinks" style="gap:1rem;">
+      <div class="nav__links nav__links--gap" id="navLinks">
         <a href="index.html" class="active">Home</a>
         <a href="produit.html">Product</a>
         <a href="pharmacies.html">Pharmacy</a>
@@ -25,7 +25,7 @@
         <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Find a pharmacy</a>
         <a href="pharmacies.html#produit-situation" class="nav__cta">Order</a>
       </div>
-      <div class="nav__lang" style="margin-left:0.5rem;">
+      <div class="nav__lang nav__lang--margin">
         <select id="langSelect" onchange="changeLanguage(this.value)">
           <option value="fr">FR</option>
           <option value="en" selected>EN</option>
@@ -102,7 +102,7 @@
   <section class="section section--light">
     <div class="section__inner">
       <div class="split">
-        <div class="split__content reveal" style="padding: 0 2rem;">
+        <div class="split__content reveal p-2">
           <span class="section__eyebrow">The Solution</span>
           <h2 class="section__title">GlycoSafe. Zero glue. Total protection.</h2>
           <p>A technical bracelet in hypoallergenic silicone with patented adapter ring.<br>It hugs the contours of the sensor to hold it without applying direct pressure.<br>No tourniquet effect.</p>
@@ -115,14 +115,12 @@
           </ul>
           <a href="produit.html" class="btn btn--primary">Learn more</a>
         </div>
-        <div class="split__content reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:1.5rem;align-items:center;justify-content:flex-start;">
+        <div class="split__content reveal reveal-delay-2 flex flex-col gap-1-5 items-center justify-start">
           <div class="split__image reveal-scale">
-            <img src="../img/glycosafe-arm.jpg" alt="GlycoSafe protective bracelet worn on arm"
-              style="width:100%;max-width:350px;border-radius:var(--radius-xl);box-shadow:var(--shadow-elevated);">
+            <img src="../img/glycosafe-arm.jpg" alt="GlycoSafe protective bracelet worn on arm" class="w-full img--max350 img--rounded">
           </div>
           <div class="split__image reveal-scale reveal-delay-2">
-            <img src="../img/glycosafe-basketball.jpg" alt="Freedom of movement with GlycoSafe during sports"
-              style="width:100%;max-width:350px;border-radius:var(--radius-xl);box-shadow:var(--shadow-elevated);">
+            <img src="../img/glycosafe-basketball.jpg" alt="Freedom of movement with GlycoSafe during sports" class="w-full img--max350 img--rounded">
           </div>
         </div>
       </div>
@@ -130,15 +128,15 @@
   </section>
 
   <!-- ═══ Marketing Visual & Counter ═══ -->
-  <section class="section section--dark" style="padding: 4rem 0; overflow:hidden; position:relative;">
-    <div class="section__inner" style="max-width: 960px; margin: 0 auto; text-align:center;">
-        <div class="counter-block reveal reveal-delay-1" style="margin-bottom: 2rem;">
-          <div class="counter-wrapper" style="position: relative; display: inline-block;">
-            <div class="counter-number" id="pharma-counter" style="font-size: 7rem; font-weight: 700; color: #e91e63; letter-spacing: -0.02em;">0</div>
-            <div class="counter-label" style="font-size: 2rem; color: #fff; font-weight: 600; margin-top: 1rem; text-shadow: 0 2px 10px rgba(233, 30, 99, 0.3);">Partner pharmacies</div>
-            <div class="counter-progress" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: rgba(255, 255, 255, 0.2); border-radius: 2px;"></div>
+  <section class="section section--dark section--compact">
+    <div class="section__inner text-center" style="max-width: 960px; margin: 0 auto;">
+        <div class="counter-block reveal reveal-delay-1 mb-2">
+          <div class="counter-wrapper inline-block" style="position: relative;">
+            <div class="counter-number" id="pharma-counter">0</div>
+            <div class="counter-label">Partner pharmacies</div>
+            <div class="counter-progress"></div>
           </div>
-          <p style="color: #ffffff; text-shadow: 0 0 15px rgba(102, 126, 234, 0.4); font-weight: 500; margin-top: 1.5rem; font-size: 1.4rem; line-height: 1.6;">They have already adopted GlycoSafe innovation.<br>Their choice. Your guarantee.</p>
+          <p class="counter-subtitle">They have already adopted GlycoSafe innovation.<br>Their choice. Your guarantee.</p>
       </div>
     </div>
   </section>
@@ -158,7 +156,7 @@
                 <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
-            <span class="section__number counter-number" data-target="1" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fff; letter-spacing: -0.02em; padding: 0.5rem 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3); position: relative; overflow: hidden;">0</span>
+            <span class="section__number counter-number" data-target="1">0</span>
           </div>
           <h3 class="card__title">Zero Irritation</h3>
           <p class="card__text">Sensor protection without adhesive.<br>No glue in contact with your skin.<br>Your epidermis breathes freely.</p>
@@ -170,7 +168,7 @@
                 <path d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <span class="section__number counter-number" data-target="2" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fff; letter-spacing: -0.02em; padding: 0.5rem 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(240, 87, 108, 0.3); position: relative; overflow: hidden;">0</span>
+            <span class="section__number counter-number" data-target="2">0</span>
           </div>
           <h3 class="card__title">Absolute Hold</h3>
           <p class="card__text">Sensor hold for sports, daily life, work, sweat, water, clothes.<br>Tested and proven.</p>
@@ -182,7 +180,7 @@
                 <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
             </div>
-            <span class="section__number counter-number" data-target="3" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: #fff; letter-spacing: -0.02em; padding: 0.5rem 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3); position: relative; overflow: hidden;">0</span>
+            <span class="section__number counter-number" data-target="3">0</span>
           </div>
           <h3 class="card__title">Durable & Economical</h3>
           <p class="card__text">Reusable for months.<br>One purchase replaces dozens of disposable patches.</p>
@@ -193,7 +191,7 @@
 
   <!-- ═══ Compatibility ═══ -->
   <section class="section section--light">
-    <div class="section__inner section__inner--narrow" style="text-align:center">
+    <div class="section__inner section__inner--narrow text-center">
       <span class="section__eyebrow reveal">Compatibility</span>
       <h2 class="section__title section__title--center reveal reveal-delay-1">Designed for your sensors.</h2>
       <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
@@ -210,14 +208,14 @@
 
   <!-- ═══ Professionals Block ═══ -->
   <section class="section section--gradient">
-    <div class="section__inner" style="text-align:center">
+    <div class="section__inner text-center">
       <span class="section__eyebrow reveal">Healthcare Professionals</span>
-      <h2 class="section__title section__title--center reveal reveal-delay-1" style="max-width:700px;margin-left:auto;margin-right:auto">Pharmacies. Distributors. Insurance.</h2>
-      <p class="section__subtitle section__subtitle--center reveal reveal-delay-2" style="color:var(--color-gray-400)">Join a fast-growing network.<br>Offer your patients the only adhesive-free alternative available in pharmacies.<br>Interesting opportunity, innovative product, French brand.</p>
+      <h2 class="section__title section__title--center reveal reveal-delay-1">Pharmacies. Distributors. Insurance.</h2>
+      <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">Join a fast-growing network.<br>Offer your patients the only adhesive-free alternative available in pharmacies.<br>Interesting opportunity, innovative product, French brand.</p>
       <div class="hero__actions reveal reveal-delay-3">
         <a href="pharmacies.html" class="btn btn--white">Pharmacy Space</a>
-        <a href="distributeurs.html#contact-distrib" class="btn btn--outline" style="border-color:#fff;color:#fff">Become a Distributor</a>
-        <a href="mutuelles.html" class="btn btn--outline" style="border-color:#fff;color:#fff">Mutuals Offer</a>
+        <a href="distributeurs.html#contact-distrib" class="btn btn--outline-white">Become a Distributor</a>
+        <a href="mutuelles.html" class="btn btn--outline-white">Mutuals Offer</a>
       </div>
     </div>
   </section>
@@ -232,7 +230,7 @@
           Fill out this form to send us a message. We will get back to you as soon as possible.
         </p>
       </div>
-      <form class="form reveal reveal-delay-3" id="contactForm" name="contact-general" method="POST" data-netlify="true">
+      <form class="form reveal reveal-delay-3" id="contactForm" name="contact-general" method="POST" action="contact-success.html" data-netlify="true">
         <input type="hidden" name="form-name" value="contact-general">
         <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
         <div class="form__row">
@@ -263,7 +261,7 @@
     <div class="footer__inner">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div style="display:inline-block; margin-bottom:1rem;">
+          <div class="inline-block mb-1">
             <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
           </div>
           <p>Diabetes without complexes, for a life without limits. French innovation for glucose sensor protection.</p>
@@ -286,85 +284,14 @@
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>
-      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+      <div class="footer__bottom footer__bottom--clean">
         <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
         <span>European patent pending</span>
-        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. All rights reserved.</span>
+        <span class="footer__copyright"> 2026 KittoFab. All rights reserved.</span>
       </div>
     </div>
   </footer>
 
   <script src="../js/main.js"></script>
-  <script>
-    function changeLanguage(lang) {
-      if (lang === 'fr') {
-        window.location.href = '../index.html';
-      } else if (lang === 'en') {
-        window.location.href = 'index.html';
-      } else if (lang === 'es') {
-        window.location.href = '../es/index.html';
-      }
-    }
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Animate main counter
-      const counterElement = document.getElementById("pharma-counter");
-      if (!counterElement) return;
-      const targetNumber = 250;
-      const duration = 2000;
-      let startTimestamp = null;
-      let hasStarted = false;
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        const easeProgress = 1 - Math.pow(1 - progress, 4);
-        const currentNumber = Math.floor(easeProgress * targetNumber);
-        counterElement.innerText = currentNumber + "+";
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        } else {
-          counterElement.innerText = "250+";
-        }
-      };
-      const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting && !hasStarted) {
-          hasStarted = true;
-          window.requestAnimationFrame(step);
-        }
-      }, { threshold: 0.5 });
-      observer.observe(counterElement);
-
-      // Animate benefit counters (excluding main pharma-counter)
-      const benefitCounters = document.querySelectorAll('.counter-number:not(#pharma-counter)');
-      benefitCounters.forEach(counter => {
-        const target = parseInt(counter.dataset.target);
-        const duration = 2000;
-        let startTimestamp = null;
-        let hasStarted = false;
-        
-        const animateCounter = (timestamp) => {
-          if (!startTimestamp) startTimestamp = timestamp;
-          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-          const easeProgress = 1 - Math.pow(1 - progress, 4);
-          const currentNumber = Math.floor(easeProgress * target);
-          counter.innerText = currentNumber;
-          
-          if (progress < 1) {
-            window.requestAnimationFrame(animateCounter);
-          }
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-          if (entries[0].isIntersecting && !hasStarted) {
-            hasStarted = true;
-            window.requestAnimationFrame(animateCounter);
-          }
-        }, { threshold: 0.5 });
-        
-        observer.observe(counter);
-      });
-    });
-  </script>
 </body>
 </html>

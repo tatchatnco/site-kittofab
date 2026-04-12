@@ -1,8 +1,102 @@
 /* =============================================
-   KittOFab — Main JavaScript
+   KittOFab — Main JavaScript (Optimisé)
    ============================================= */
 
+/* ─── Language Switcher ─── */
+function changeLanguage(lang) {
+  // Détecte le dossier actuel (racine, en/, ou es/)
+  const path = window.location.pathname;
+  const isEn = path.includes('/en/');
+  const isEs = path.includes('/es/');
+  
+  const routes = {
+    'fr': isEn ? '../index.html' : (isEs ? '../index.html' : 'index.html'),
+    'en': isEn ? 'index.html' : (isEs ? '../en/index.html' : 'en/index.html'),
+    'es': isEs ? 'index.html' : (isEn ? '../es/index.html' : 'es/index.html')
+  };
+  
+  if (routes[lang]) {
+    window.location.href = routes[lang];
+  }
+}
+
+/* ─── Pharma Counter Animation ─── */
+function initPharmaCounter() {
+  const counterElement = document.getElementById("pharma-counter");
+  if (!counterElement) return;
+
+  const targetNumber = 250;
+  const duration = 2000;
+  let startTimestamp = null;
+  let hasStarted = false;
+
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    const easeProgress = 1 - Math.pow(1 - progress, 4);
+    const currentNumber = Math.floor(easeProgress * targetNumber);
+
+    counterElement.innerText = currentNumber + "+";
+
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    } else {
+      counterElement.innerText = "250+";
+    }
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !hasStarted) {
+      hasStarted = true;
+      requestAnimationFrame(step);
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(counterElement);
+}
+
+/* ─── Benefit Counters (1, 2, 3 cards) ─── */
+function initBenefitCounters() {
+  const benefitCounters = document.querySelectorAll('.counter-number:not(#pharma-counter)');
+  
+  benefitCounters.forEach(counter => {
+    const target = parseInt(counter.dataset.target);
+    if (!target) return;
+    
+    const duration = 2000;
+    let startTimestamp = null;
+    let hasStarted = false;
+    
+    const animateCounter = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      const easeProgress = 1 - Math.pow(1 - progress, 4);
+      const currentNumber = Math.floor(easeProgress * target);
+      counter.innerText = currentNumber;
+      
+      if (progress < 1) {
+        requestAnimationFrame(animateCounter);
+      }
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && !hasStarted) {
+        hasStarted = true;
+        requestAnimationFrame(animateCounter);
+      }
+    }, { threshold: 0.5 });
+    
+    observer.observe(counter);
+  });
+}
+
+/* =============================================
+   DOMContentLoaded - Initialisation
+   ============================================= */
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize counters
+  initPharmaCounter();
+  initBenefitCounters();
 
   /* ─── Scroll Reveal (Intersection Observer) ─── */
   const revealElements = document.querySelectorAll('.reveal');
@@ -195,7 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const hash = window.location.hash;
     const target = document.querySelector(hash);
     if (target) {
-      // Longer delay to ensure images and layouts are stable
       setTimeout(() => {
         const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 72;
         const top = target.getBoundingClientRect().top + window.scrollY - offset;
@@ -205,3 +298,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// Expose changeLanguage globally for HTML onclick handlers
+window.changeLanguage = changeLanguage;

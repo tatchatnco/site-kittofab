@@ -15,7 +15,7 @@
       <a href="index.html" class="nav__logo">
         <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
       </a>
-      <div class="nav__links" id="navLinks" style="gap:1rem;">
+      <div class="nav__links nav__links--gap" id="navLinks">
         <a href="index.html">Home</a>
         <a href="produit.html">Product</a>
         <a href="pharmacies.html" class="active">Pharmacy</a>
@@ -25,7 +25,7 @@
         <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Find a pharmacy</a>
         <a href="#produit-situation" class="nav__cta">Order</a>
       </div>
-      <div class="nav__lang" style="margin-left:0.5rem;">
+      <div class="nav__lang nav__lang--margin">
         <select id="langSelect" onchange="changeLanguage(this.value)">
           <option value="fr">FR</option>
           <option value="en" selected>EN</option>
@@ -49,7 +49,7 @@
         </p>
         <div class="hero__actions reveal reveal-delay-3">
             <a href="#produit-situation" class="btn btn--primary">Order a display</a>
-            <a href="#avantages" class="btn btn--outline" style="border-color:#fff;color:#fff;">See benefits</a>
+            <a href="#avantages" class="btn btn--outline-white">See benefits</a>
         </div>
     </section>
 
@@ -83,7 +83,7 @@
                 <span class="section__eyebrow reveal">Your advantages</span>
                 <h2 class="section__title section__title--center reveal reveal-delay-1">A product accessible to everyone and simple to manage.</h2>
             </div>
-            <div class="grid grid--2" style="max-width:900px;margin:0 auto;">
+            <div class="grid grid--2 grid--center">
                 <div class="card reveal reveal-delay-1">
                     <div class="card__icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
@@ -126,11 +126,11 @@
 
     <!-- Product Image Showcase -->
     <section class="section section--gray" id="produit-situation">
-        <div class="section__inner" style="text-align:center;">
+        <div class="section__inner text-center">
             <span class="section__eyebrow reveal">The product in action</span>
             <h2 class="section__title section__title--center reveal reveal-delay-1">Displays adapted to your space.</h2>
         </div>
-        <div class="gallery gallery--3 reveal-scale" style="margin-top:3rem;">
+        <div class="gallery gallery--3 reveal-scale mt-3">
             <div class="gallery__item">
                 <img src="../img/glycosafe-presentoir-16-new.jpg" alt="GlycoSafe 16-piece counter display box" loading="lazy">
             </div>
@@ -153,7 +153,7 @@
                     Fill out this form to receive our commercial offer and order your GlycoSafe counter display.
                 </p>
             </div>
-            <form class="form reveal reveal-delay-3" id="contactForm" name="pharmacie-contact" method="POST" data-netlify="true">
+            <form class="form reveal reveal-delay-3" id="contactForm" name="pharmacie-contact" method="POST" action="pharmacies-success.html" data-netlify="true">
                 <input type="hidden" name="form-name" value="pharmacie-contact">
                 <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
                 <div class="form__row">
@@ -181,11 +181,11 @@
                     </div>
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="quantite-16" style="font-weight: 700;">16-piece display - Quantity</label>
+                    <label class="form__label font-bold" for="quantite-16">16-piece display - Quantity</label>
                     <input class="form__input" type="number" id="quantite-16" name="quantite-16" min="0" placeholder="0">
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="quantite-32" style="font-weight: 700;">32-piece display - Quantity</label>
+                    <label class="form__label font-bold" for="quantite-32">32-piece display - Quantity</label>
                     <input class="form__input" type="number" id="quantite-32" name="quantite-32" min="0" placeholder="0">
                 </div>
                 <div class="form__group">
@@ -203,7 +203,7 @@
     <div class="footer__inner">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div style="display:inline-block; margin-bottom:1rem;">
+          <div class="inline-block mb-1">
             <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
           </div>
           <p>Diabetes without complexes, for a life without limits. French innovation for glucose sensor protection.</p>
@@ -226,25 +226,14 @@
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>
-      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+      <div class="footer__bottom footer__bottom--clean">
         <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
         <span>European patent pending</span>
-        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. All rights reserved.</span>
+        <span class="footer__copyright"> 2026 KittoFab. All rights reserved.</span>
       </div>
     </div>
   </footer>
 
     <script src="../js/main.js"></script>
-    <script>
-        function changeLanguage(lang) {
-            if (lang === 'fr') {
-                window.location.href = '../pharmacies.html';
-            } else if (lang === 'en') {
-                window.location.href = 'pharmacies.html';
-            } else if (lang === 'es') {
-                window.location.href = '../es/pharmacies.html';
-            }
-        }
-    </script>
 </body>
 </html>

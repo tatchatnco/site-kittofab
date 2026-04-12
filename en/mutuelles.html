@@ -15,7 +15,7 @@
       <a href="index.html" class="nav__logo">
         <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
       </a>
-      <div class="nav__links" id="navLinks" style="gap:1rem;">
+      <div class="nav__links nav__links--gap" id="navLinks">
         <a href="index.html">Home</a>
         <a href="produit.html">Product</a>
         <a href="pharmacies.html">Pharmacy</a>
@@ -25,7 +25,7 @@
         <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Find a pharmacy</a>
         <a href="#contact-mutuelle" class="nav__cta">Contact us</a>
       </div>
-      <div class="nav__lang" style="margin-left:0.5rem;">
+      <div class="nav__lang nav__lang--margin">
         <select id="langSelect" onchange="changeLanguage(this.value)">
           <option value="fr">FR</option>
           <option value="en" selected>EN</option>
@@ -138,7 +138,7 @@
                 <span class="section__eyebrow reveal">Partnership</span>
                 <h2 class="section__title section__title--center reveal reveal-delay-1">Let's study your member offer together.</h2>
             </div>
-            <form class="form reveal reveal-delay-2" id="mutuelleForm" name="mutuelle-contact" method="POST" data-netlify="true">
+            <form class="form reveal reveal-delay-2" id="mutuelleForm" name="mutuelle-contact" method="POST" action="mutuelles-success.html" data-netlify="true">
                 <input type="hidden" name="form-name" value="mutuelle-contact">
                 <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
                 <div class="form__row">
@@ -200,10 +200,10 @@
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>
-      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+      <div class="footer__bottom footer__bottom--clean">
         <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
         <span>European patent pending</span>
-        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. All rights reserved.</span>
+        <span class="footer__copyright"> 2026 KittoFab. All rights reserved.</span>
       </div>
     </div>
   </footer>

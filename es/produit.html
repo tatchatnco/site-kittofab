@@ -15,7 +15,7 @@
       <a href="index.html" class="nav__logo">
         <img src="../img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
       </a>
-      <div class="nav__links" id="navLinks" style="gap:1rem;">
+      <div class="nav__links nav__links--gap" id="navLinks">
         <a href="index.html">Inicio</a>
         <a href="produit.html" class="active">Producto</a>
         <a href="pharmacies.html">Farmacias</a>
@@ -25,7 +25,7 @@
         <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Buscar farmacia</a>
         <a href="pharmacies.html#produit-situation" class="nav__cta">Pedir</a>
       </div>
-      <div class="nav__lang" style="margin-left:0.5rem;">
+      <div class="nav__lang nav__lang--margin">
         <select id="langSelect" onchange="changeLanguage(this.value)">
           <option value="fr">FR</option>
           <option value="en">EN</option>
@@ -60,15 +60,15 @@
                     <p>El uso continuo de un sensor es una revolución en el seguimiento de glucosa.<br>Pero mantenerlo en su lugar sigue siendo un desafío diario.<br>La irritación y alergias a los pegamentos de los sobrepatches de sensor de glucosa son el día a día de muchos pacientes.</p>
                     <p>La retirada de parches daña la epidermis.<br>El agua compromete la sujeción.<br>La ropa se engancha.<br>El sensor acaba despegándose o arrancándose.</p>
                 </div>
-                <div class="split__content reveal reveal-delay-2" style="text-align:center;">
-                    <div class="card" style="background:var(--color-gray-900);text-align:left;">
-                        <h3 class="card__title" style="color:var(--color-accent);margin-bottom:1rem;">Los límites de los parches</h3>
+                <div class="split__content reveal reveal-delay-2 text-center">
+                    <div class="card bg-gray-900 text-left">
+                        <h3 class="card__title text-accent mb-1">Los límites de los parches</h3>
                         <ul class="split__list">
-                            <li style="color:var(--color-gray-400)">Reacciones alérgicas e irritaciones cutáneas</li>
-                            <li style="color:var(--color-gray-400)">Despegue en el agua y con el sudor</li>
-                            <li style="color:var(--color-gray-400)">Residuos pegajosos en la piel</li>
-                            <li style="color:var(--color-gray-400)">Uso único, coste recurrente</li>
-                            <li style="color:var(--color-gray-400)">Arranque involuntario por la ropa</li>
+                            <li class="text-gray-400">Reacciones alérgicas e irritaciones cutáneas</li>
+                            <li class="text-gray-400">Despegue en el agua y con el sudor</li>
+                            <li class="text-gray-400">Residuos pegajosos en la piel</li>
+                            <li class="text-gray-400">Uso único, coste recurrente</li>
+                            <li class="text-gray-400">Arranque involuntario por la ropa</li>
                         </ul>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     KittOFab propone un avance tecnológico.<br>Una pulsera protectora técnica que asegura tu sensor sin ningún contacto adhesivo con la piel.
                 </p>
             </div>
-            <div class="grid grid--2" style="max-width:900px;margin:0 auto;">
+            <div class="grid grid--2 grid--center">
                 <div class="card reveal reveal-delay-1">
                     <div class="card__icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f" stroke-width="2">
@@ -479,10 +479,10 @@
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>
-      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+      <div class="footer__bottom footer__bottom--clean">
         <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
         <span>Patente europea en curso</span>
-        <span style="color:var(--color-gray-400);font-size:0.875rem;"> 2026 KittoFab. Todos los derechos reservados.</span>
+        <span class="footer__copyright"> 2026 KittoFab. Todos los derechos reservados.</span>
       </div>
     </div>
   </footer>

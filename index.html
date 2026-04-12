@@ -18,7 +18,7 @@
       <a href="index.html" class="nav__logo">
         <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
       </a>
-      <div class="nav__links" id="navLinks" style="gap:1rem;">
+      <div class="nav__links nav__links--gap" id="navLinks">
         <a href="index.html" class="active">Accueil</a>
         <a href="produit.html">Produit</a>
         <a href="pharmacies.html">Pharmacies</a>
@@ -28,7 +28,7 @@
         <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Trouver une pharmacie</a>
         <a href="pharmacies.html#produit-situation" class="nav__cta">Commander</a>
       </div>
-      <div class="nav__lang" style="margin-left:0.5rem;">
+      <div class="nav__lang nav__lang--margin">
         <select id="langSelect" onchange="changeLanguage(this.value)">
           <option value="fr" selected>FR</option>
           <option value="en">EN</option>
@@ -111,7 +111,7 @@
   <section class="section section--light">
     <div class="section__inner">
       <div class="split">
-        <div class="split__content reveal" style="padding: 0 2rem;">
+        <div class="split__content reveal p-2">
           <span class="section__eyebrow">La solution</span>
           <h2 class="section__title">GlycoSafe. Zéro colle. Protection totale.</h2>
           <p>Un bracelet technique en silicone hypoallergénique avec bague adaptatrice brevetée.<br>Il épouse les
@@ -126,14 +126,12 @@
           </ul>
           <a href="produit.html" class="btn btn--primary">En savoir plus</a>
         </div>
-        <div class="split__content reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:1.5rem;align-items:center;justify-content:flex-start;">
+        <div class="split__content reveal reveal-delay-2 flex flex-col gap-1-5 items-center justify-start">
           <div class="split__image reveal-scale">
-            <img src="img/glycosafe-arm.jpg" alt="GlycoSafe bracelet protecteur porté sur le bras"
-              style="width:100%;max-width:350px;border-radius:var(--radius-xl);box-shadow:var(--shadow-elevated);">
+            <img src="img/glycosafe-arm.jpg" alt="GlycoSafe bracelet protecteur porté sur le bras" class="w-full img--max350 img--rounded">
           </div>
           <div class="split__image reveal-scale reveal-delay-2">
-            <img src="img/glycosafe-basketball.jpg" alt="Liberté de mouvement avec GlycoSafe pendant le sport"
-              style="width:100%;max-width:350px;border-radius:var(--radius-xl);box-shadow:var(--shadow-elevated);">
+            <img src="img/glycosafe-basketball.jpg" alt="Liberté de mouvement avec GlycoSafe pendant le sport" class="w-full img--max350 img--rounded">
           </div>
         </div>
       </div>
@@ -141,17 +139,17 @@
   </section>
 
   <!-- ═══ Marketing Visual & Counter ═══ -->
-  <section class="section section--dark" style="padding: 4rem 0; overflow:hidden; position:relative;">
-    <div class="section__inner" style="max-width: 960px; margin: 0 auto; text-align:center;">
+  <section class="section section--dark section--compact">
+    <div class="section__inner text-center" style="max-width: 960px; margin: 0 auto;">
 
       <!-- Counter Block -->
-      <div class="counter-block reveal reveal-delay-1" style="margin-bottom: 2rem;">
-        <div class="counter-wrapper" style="position: relative; display: inline-block;">
-          <div class="counter-number" id="pharma-counter" style="font-size: 7rem; font-weight: 700; color: #e91e63; letter-spacing: -0.02em;">0</div>
-          <div class="counter-label" style="font-size: 2rem; color: #fff; font-weight: 600; margin-top: 1rem; text-shadow: 0 2px 10px rgba(233, 30, 99, 0.3);">Pharmacies partenaires en France</div>
-          <div class="counter-progress" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: rgba(255, 255, 255, 0.2); border-radius: 2px;"></div>
+      <div class="counter-block reveal reveal-delay-1 mb-2">
+        <div class="counter-wrapper inline-block" style="position: relative;">
+          <div class="counter-number" id="pharma-counter">0</div>
+          <div class="counter-label">Pharmacies partenaires en France</div>
+          <div class="counter-progress"></div>
         </div>
-        <p style="color: #ffffff; text-shadow: 0 0 15px rgba(0, 174, 239, 0.5); font-weight: 500; margin-top: 0.75rem; font-size: 1.4rem; line-height: 1.6;">Elles ont déjà adopté l'innovation GlycoSafe.<br>Leur choix. Votre garantie.</p>
+        <p class="counter-subtitle">Elles ont déjà adopté l'innovation GlycoSafe.<br>Leur choix. Votre garantie.</p>
       </div>
 
     </div>
@@ -212,8 +210,8 @@
   </section>
 
   <!-- ═══ Détail Produit (full-bleed image) ═══ -->
-  <section class="section section--light" style="padding-bottom:0;">
-    <div class="section__inner" style="text-align:center;margin-bottom:3rem;">
+  <section class="section section--light section--pb0">
+    <div class="section__inner text-center mb-3">
       <span class="section__eyebrow reveal">Conception premium</span>
       <h2 class="section__title section__title--center reveal reveal-delay-1">Silicone de haute qualité.</h2>
       <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
@@ -222,7 +220,7 @@
         la contrefaçon.
       </p>
     </div>
-    <div class="gallery gallery--2 reveal-scale" style="padding-bottom:var(--space-section);">
+    <div class="gallery gallery--2 reveal-scale pb-section">
       <div class="gallery__item">
         <img src="img/glycosafe-detail-dark.jpg" alt="GlycoSafe gros plan sur la bague adaptatrice en silicone bleu"
           loading="lazy">
@@ -231,12 +229,12 @@
         <img src="img/glycosafe-detail-pink.jpg" alt="GlycoSafe gros plan sur la bague rose vif" loading="lazy">
       </div>
     </div>
-    <div style="height:var(--space-section)"></div>
+    <div class="spacer-section"></div>
   </section>
 
   <!-- ═══ Compatibilité ═══ -->
   <section class="section section--light">
-    <div class="section__inner section__inner--narrow" style="text-align:center">
+    <div class="section__inner section__inner--narrow text-center">
       <span class="section__eyebrow reveal">Compatibilité</span>
       <h2 class="section__title section__title--center reveal reveal-delay-1">Conçu pour vos capteurs.</h2>
       <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
@@ -294,7 +292,7 @@
           Remplissez ce formulaire pour nous envoyer un message. Nous vous répondrons dans les plus brefs délais.
         </p>
       </div>
-      <form class="form reveal reveal-delay-3" id="contactForm" name="contact-general" method="POST" data-netlify="true">
+      <form class="form reveal reveal-delay-3" id="contactForm" name="contact-general" method="POST" action="contact-success.html" data-netlify="true">
         <input type="hidden" name="form-name" value="contact-general">
         <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
         <div class="form__row">
@@ -325,7 +323,7 @@
     <div class="footer__inner">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div style="display:inline-block; margin-bottom:1rem;">
+          <div class="inline-block mb-1">
             <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="footer__logo logo-pivot">
           </div>
           <p>Diabetes without complexes, for a life without limits. Innovation française pour la protection de capteurs
@@ -349,92 +347,14 @@
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>
-      <div class="footer__bottom" style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;">
+      <div class="footer__bottom footer__bottom--clean">
         <span>KittOFab SAS, 8 bis rue Abel, 75012 Paris. SIRET 93993310700012</span>
         <span>Brevet européen en cours</span>
-        <span style="color:var(--color-gray-400);font-size:0.875rem;">© 2026 KittoFab. Tous droits réservés.</span>
+        <span class="footer__copyright">© 2026 KittoFab. Tous droits réservés.</span>
       </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
-  <script>
-    function changeLanguage(lang) {
-      if (lang === 'fr') {
-        window.location.href = 'index.html';
-      } else if (lang === 'en') {
-        window.location.href = 'en/index.html';
-      } else if (lang === 'es') {
-        window.location.href = 'es/index.html';
-      }
-    }
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const counterElement = document.getElementById("pharma-counter");
-      if (!counterElement) return;
-
-      const targetNumber = 250;
-      const duration = 2000; // 2 seconds
-      let startTimestamp = null;
-      let hasStarted = false;
-
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-
-        // Easing function: easeOutQuart
-        const easeProgress = 1 - Math.pow(1 - progress, 4);
-        const currentNumber = Math.floor(easeProgress * targetNumber);
-
-        counterElement.innerText = currentNumber + "+";
-
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        } else {
-          counterElement.innerText = "250+";
-        }
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting && !hasStarted) {
-          hasStarted = true;
-          window.requestAnimationFrame(step);
-        }
-      }, { threshold: 0.5 });
-
-      observer.observe(counterElement);
-
-      // Animate benefit counters (excluding main pharma-counter)
-      const benefitCounters = document.querySelectorAll('.counter-number:not(#pharma-counter)');
-      benefitCounters.forEach(counter => {
-        const target = parseInt(counter.dataset.target);
-        const duration = 2000;
-        let startTimestamp = null;
-        let hasStarted = false;
-        
-        const animateCounter = (timestamp) => {
-          if (!startTimestamp) startTimestamp = timestamp;
-          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-          const easeProgress = 1 - Math.pow(1 - progress, 4);
-          const currentNumber = Math.floor(easeProgress * target);
-          counter.innerText = currentNumber;
-          
-          if (progress < 1) {
-            window.requestAnimationFrame(animateCounter);
-          }
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-          if (entries[0].isIntersecting && !hasStarted) {
-            hasStarted = true;
-            window.requestAnimationFrame(animateCounter);
-          }
-        }, { threshold: 0.5 });
-        
-        observer.observe(counter);
-      });
-    });
-  </script>
 </body>
 
 </html>

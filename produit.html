@@ -18,7 +18,7 @@
       <a href="index.html" class="nav__logo">
         <img src="img/LOGO MULTI COLOR.png" alt="KittOFab" class="logo-pivot">
       </a>
-      <div class="nav__links" id="navLinks" style="gap:1rem;">
+      <div class="nav__links nav__links--gap" id="navLinks">
         <a href="index.html">Accueil</a>
         <a href="produit.html" class="active">Produit</a>
         <a href="pharmacies.html">Pharmacies</a>
@@ -28,7 +28,7 @@
         <a href="liste-pharmacies.html" class="nav__cta nav__cta--secondary">Trouver une pharmacie</a>
         <a href="pharmacies.html#produit-situation" class="nav__cta">Commander</a>
       </div>
-      <div class="nav__lang" style="margin-left:0.5rem;">
+      <div class="nav__lang nav__lang--margin">
         <select id="langSelect" onchange="changeLanguage(this.value)">
           <option value="fr" selected>FR</option>
           <option value="en">EN</option>
@@ -70,16 +70,15 @@
                         accrochent.<br>Le
                         capteur finit par se décoller ou s'arracher.</p>
                 </div>
-                <div class="split__content reveal reveal-delay-2" style="text-align:center;">
-                    <div class="card" style="background:var(--color-gray-900);text-align:left;">
-                        <h3 class="card__title" style="color:var(--color-accent);margin-bottom:1rem;">Les limites des
-                            patchs</h3>
+                <div class="split__content reveal reveal-delay-2 text-center">
+                    <div class="card bg-gray-900 text-left">
+                        <h3 class="card__title text-accent mb-1">Les limites des patchs</h3>
                         <ul class="split__list">
-                            <li style="color:var(--color-gray-400)">Réactions allergiques et irritations cutanées</li>
-                            <li style="color:var(--color-gray-400)">Décollement sous l'eau et à la transpiration</li>
-                            <li style="color:var(--color-gray-400)">Résidus collants sur la peau</li>
-                            <li style="color:var(--color-gray-400)">Usage unique, coût récurrent</li>
-                            <li style="color:var(--color-gray-400)">Arrachement involontaire par les vêtements</li>
+                            <li class="text-gray-400">Réactions allergiques et irritations cutanées</li>
+                            <li class="text-gray-400">Décollement sous l'eau et à la transpiration</li>
+                            <li class="text-gray-400">Résidus collants sur la peau</li>
+                            <li class="text-gray-400">Usage unique, coût récurrent</li>
+                            <li class="text-gray-400">Arrachement involontaire par les vêtements</li>
                         </ul>
                     </div>
                 </div>
@@ -100,7 +99,7 @@
                     capteur sans aucun contact adhésif avec la peau.
                 </p>
             </div>
-            <div class="grid grid--2" style="max-width:900px;margin:0 auto;">
+            <div class="grid grid--2 grid--center">
                 <div class="card reveal reveal-delay-1">
                     <div class="card__icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8dc63f"

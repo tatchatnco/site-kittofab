@@ -2,8 +2,15 @@ const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs');
 const fetch = require('node-fetch'); // Nécessaire pour le géocodage
 
-const supabaseUrl = 'https://ubbrxhjilvugjjyewixy.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InViYnJ4aGppbHZ1Z2pqeWV3aXh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3MjA3ODQsImV4cCI6MjA5MTI5Njc4NH0.0GqNQ58JsNCet_UOTuPgLXhw4KE05HSMRsfhf76z268';
+// Configuration via variables d'environnement (sécurisé)
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+    console.error('❌ Erreur : Les variables d\'environnement SUPABASE_URL et SUPABASE_KEY sont requises.');
+    console.error('📝 Créez un fichier .env basé sur .env.example ou exportez les variables.');
+    process.exit(1);
+}
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
