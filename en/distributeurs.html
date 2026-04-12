@@ -146,7 +146,7 @@
             <div class="stats-banner reveal reveal-delay-3">
                 <div class="stat">
                     <div class="stat__number" data-count="250" data-suffix="+">0</div>
-                    <div class="stat__label">Customer pharmacies</div>
+                    <div class="stat__label">Partner pharmacies</div>
                 </div>
                 <div class="stat">
                     <div class="stat__number" data-count="20000">0</div>
@@ -220,7 +220,7 @@
                     <p>Objective: establish KittOFab as an essential brand within 12 to 18 months, then deploy in Europe thanks to the pending European patent.</p>
                     <ul class="split__list">
                         <li>Objective 1,000 pharmacies in 12 to 18 months</li>
-                        <li>European patent pending (ring + bracelet)</li>
+                        <li>European patent pending</li>
                         <li>Adapters for new sensors in development</li>
                     </ul>
                     <a href="#contact-distrib" class="btn btn--primary">Join the adventure</a>
@@ -238,9 +238,9 @@
                 <span class="section__eyebrow reveal">Partnership</span>
                 <h2 class="section__title section__title--center reveal reveal-delay-1">Become an authorized distributor.</h2>
             </div>
-            <form class="form reveal reveal-delay-2" id="distribForm" name="distributeur-contact" method="POST" data-netlify="true">
+            <form class="form reveal reveal-delay-2" id="distribForm" name="distributeur-contact" method="POST" action="distributeurs-success.html" data-netlify="true">
                 <input type="hidden" name="form-name" value="distributeur-contact">
-                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
                 <div class="form__row">
                     <div class="form__group">
                         <label class="form__label" for="d-nom">Name</label>
@@ -263,7 +263,7 @@
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="d-message">Message</label>
-                    <textarea class="form__textarea" id="d-message" name="message" placeholder="Describe your activity..."></textarea>
+                    <textarea class="form__textarea" id="d-message" name="message" placeholder="Write your message..."></textarea>
                 </div>
                 <button type="submit" class="btn btn--primary">Send my request</button>
             </form>
@@ -295,7 +295,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Contact</div>
-          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="index.html#contact">Form</a>
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>

@@ -153,9 +153,9 @@
                     Rellene este formulario para recibir nuestra oferta comercial y pedir su presentador mostrador GlycoSafe.
                 </p>
             </div>
-            <form class="form reveal reveal-delay-3" id="contactForm" name="pharmacie-contact" method="POST" data-netlify="true">
+            <form class="form reveal reveal-delay-3" id="contactForm" name="pharmacie-contact" method="POST" action="pharmacies-success.html" data-netlify="true">
                 <input type="hidden" name="form-name" value="pharmacie-contact">
-                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
                 <div class="form__row">
                     <div class="form__group">
                         <label class="form__label" for="nom">Apellido</label>
@@ -181,15 +181,15 @@
                     </div>
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="presentoir">Formato presentador</label>
-                    <select class="form__input" id="presentoir" name="presentoir">
-                        <option value="">Elija un formato</option>
-                        <option value="16">Presentador 16 piezas</option>
-                        <option value="32">Presentador 32 piezas</option>
-                    </select>
+                    <label class="form__label" for="quantite-16" style="font-weight: 700;">Presentador 16 piezas - Cantidad</label>
+                    <input class="form__input" type="number" id="quantite-16" name="quantite-16" min="0" placeholder="0">
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="message">Mensaje (opcional)</label>
+                    <label class="form__label" for="quantite-32" style="font-weight: 700;">Presentador 32 piezas - Cantidad</label>
+                    <input class="form__input" type="number" id="quantite-32" name="quantite-32" min="0" placeholder="0">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="message">Mensaje</label>
                     <textarea class="form__textarea" id="message" name="message" placeholder="Su mensaje o preguntas..."></textarea>
                 </div>
                 <button type="submit" class="btn btn--primary">Enviar mi solicitud</button>
@@ -222,7 +222,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Contacto</div>
-          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="index.html#contact">Formulario</a>
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>

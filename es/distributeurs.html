@@ -146,7 +146,7 @@
             <div class="stats-banner reveal reveal-delay-3">
                 <div class="stat">
                     <div class="stat__number" data-count="250" data-suffix="+">0</div>
-                    <div class="stat__label">Farmacias clientes</div>
+                    <div class="stat__label">Farmacias asociadas</div>
                 </div>
                 <div class="stat">
                     <div class="stat__number" data-count="20000">0</div>
@@ -220,7 +220,7 @@
                     <p>Objetivo: imponer KittOFab como marca ineludible en 12 a 18 meses, luego desplegar en Europa gracias a la patente europea en curso.</p>
                     <ul class="split__list">
                         <li>Objetivo 1.000 farmacias en 12 a 18 meses</li>
-                        <li>Patente europea en curso (anillo + pulsera)</li>
+                        <li>Patente europea en curso</li>
                         <li>Adaptadores para nuevos sensores en desarrollo</li>
                     </ul>
                     <a href="#contact-distrib" class="btn btn--primary">Unirse a la aventura</a>
@@ -238,9 +238,9 @@
                 <span class="section__eyebrow reveal">Asociación</span>
                 <h2 class="section__title section__title--center reveal reveal-delay-1">Conviértase en distribuidor homologado.</h2>
             </div>
-            <form class="form reveal reveal-delay-2" id="distribForm" name="distributeur-contact" method="POST" data-netlify="true">
+            <form class="form reveal reveal-delay-2" id="distribForm" name="distributeur-contact" method="POST" action="distributeurs-success.html" data-netlify="true">
                 <input type="hidden" name="form-name" value="distributeur-contact">
-                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
                 <div class="form__row">
                     <div class="form__group">
                         <label class="form__label" for="d-nom">Nombre</label>
@@ -263,7 +263,7 @@
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="d-message">Mensaje</label>
-                    <textarea class="form__textarea" id="d-message" name="message" placeholder="Describa su actividad..."></textarea>
+                    <textarea class="form__textarea" id="d-message" name="message" placeholder="Escribe tu mensaje..."></textarea>
                 </div>
                 <button type="submit" class="btn btn--primary">Enviar mi solicitud</button>
             </form>
@@ -295,7 +295,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Contacto</div>
-          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="index.html#contact">Formulario</a>
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>

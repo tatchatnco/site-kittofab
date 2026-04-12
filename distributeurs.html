@@ -153,7 +153,7 @@
             <div class="stats-banner reveal reveal-delay-3">
                 <div class="stat">
                     <div class="stat__number" data-count="250" data-suffix="+">0</div>
-                    <div class="stat__label">Pharmacies clientes</div>
+                    <div class="stat__label">Pharmacies partenaires</div>
                 </div>
                 <div class="stat">
                     <div class="stat__number" data-count="20000">0</div>
@@ -235,7 +235,7 @@
                         Europe grâce au brevet européen en cours.</p>
                     <ul class="split__list">
                         <li>Objectif 1 000 pharmacies en 12 à 18 mois</li>
-                        <li>Brevet européen en cours (bague + bracelet)</li>
+                        <li>Brevet européen en cours</li>
                         <li>Adaptateurs pour nouveaux capteurs en développement</li>
                     </ul>
                     <a href="#contact-distrib" class="btn btn--primary">Rejoindre l'aventure</a>
@@ -251,20 +251,27 @@
         <div class="section__inner">
             <div class="section__header">
                 <span class="section__eyebrow reveal">Partenariat</span>
-                <h2 class="section__title section__title--center reveal reveal-delay-1">Devenez distributeur agréé.</h2>
+                <h2 class="section__title section__title--center reveal reveal-delay-1">Devenez distributeur.</h2>
+                <p class="section__subtitle section__subtitle--center reveal reveal-delay-2">
+                    Remplissez ce formulaire pour nous contacter et discuter des opportunités de partenariat.
+                </p>
             </div>
-            <form class="form reveal reveal-delay-2" id="distribForm" name="distributeur-contact" method="POST" data-netlify="true">
+            <form class="form reveal reveal-delay-3" id="distribForm" name="distributeur-contact" method="POST" action="distributeurs-success.html" data-netlify="true">
                 <input type="hidden" name="form-name" value="distributeur-contact">
-                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="bot-field" data-netlify-honeypot="bot-field" />
                 <div class="form__row">
                     <div class="form__group">
                         <label class="form__label" for="d-nom">Nom</label>
                         <input class="form__input" type="text" id="d-nom" name="nom" placeholder="Votre nom" required>
                     </div>
                     <div class="form__group">
-                        <label class="form__label" for="d-societe">Société</label>
-                        <input class="form__input" type="text" id="d-societe" name="societe" placeholder="Votre société" required>
+                        <label class="form__label" for="d-prenom">Prénom</label>
+                        <input class="form__input" type="text" id="d-prenom" name="prenom" placeholder="Votre prénom" required>
                     </div>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="d-societe">Société</label>
+                    <input class="form__input" type="text" id="d-societe" name="societe" placeholder="Votre société" required>
                 </div>
                 <div class="form__row">
                     <div class="form__group">
@@ -278,7 +285,7 @@
                 </div>
                 <div class="form__group">
                     <label class="form__label" for="d-message">Message</label>
-                    <textarea class="form__textarea" id="d-message" name="message" placeholder="Décrivez votre activité..."></textarea>
+                    <textarea class="form__textarea" id="d-message" name="message" placeholder="Ecrivez votre message..."></textarea>
                 </div>
                 <button type="submit" class="btn btn--primary">Envoyer ma demande</button>
             </form>
@@ -309,7 +316,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Contact</div>
-          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="index.html#contact">Formulaire</a>
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>

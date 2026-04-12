@@ -424,7 +424,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Contact</div>
-          <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+          <a href="index.html#contact">Formulaire</a>
           <a href="https://www.kittofab.fr">www.kittofab.fr</a>
         </div>
       </div>
@@ -483,7 +483,8 @@
                     name: p.nom,
                     address: p.adresse,
                     city: p.ville,
-                    dept: p.code_postal
+                    dept: p.code_postal,
+                    googleMapsUrl: p.google_maps_url || null
                 }));
 
                 // Met à jour le compteur total
@@ -499,9 +500,12 @@
         }
 
         // ─── Fonction pour générer le lien Google Maps ───
-        function generateGoogleMapsLink(name, address, city, dept) {
-            const fullAddress = `${address}, ${city} ${dept}, France`;
-            return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
+        function generateGoogleMapsLink(name, address, city, dept, googleMapsUrl) {
+            if (googleMapsUrl) {
+                return googleMapsUrl;
+            }
+            const query = `${name} ${city}`;
+            return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
         }
 
         // ─── Rendu des cartes ───
@@ -532,7 +536,7 @@
                         <span class="pharmacy-card__dept">${p.dept}</span>
                     </div>
                     <div class="pharmacy-card__actions">
-                        <a href="${generateGoogleMapsLink(p.name, p.address, p.city, p.dept)}" target="_blank" class="btn-maps">
+                        <a href="${generateGoogleMapsLink(p.name, p.address, p.city, p.dept, p.googleMapsUrl)}" target="_blank" class="btn-maps">
                             📍 Voir sur Google Maps
                         </a>
                     </div>

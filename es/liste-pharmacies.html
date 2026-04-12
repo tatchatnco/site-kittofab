@@ -390,7 +390,7 @@
                 </div>
                 <div class="footer__col">
                     <div class="footer__col-title">Contacto</div>
-                    <a href="mailto:kittofab@gmail.com">kittofab@gmail.com</a>
+                    <a href="index.html#contact">Formulario</a>
                     <a href="https://www.kittofab.fr">www.kittofab.fr</a>
                 </div>
             </div>
@@ -442,11 +442,13 @@
                     return;
                 }
 
+                // Conversión del formato Supabase al formato esperado por JavaScript
                 pharmacies = data.map(p => ({
                     name: p.nom,
                     address: p.adresse,
                     city: p.ville,
-                    dept: p.code_postal
+                    dept: p.code_postal,
+                    googleMapsUrl: p.google_maps_url || null
                 }));
 
                 const totalCount = document.getElementById('totalCount');
@@ -458,9 +460,12 @@
         }
 
         // ─── Función para generar enlace Google Maps ───
-        function generateGoogleMapsLink(name, address, city, dept) {
-            const fullAddress = `${address}, ${city} ${dept}, France`;
-            return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
+        function generateGoogleMapsLink(name, address, city, dept, googleMapsUrl) {
+            if (googleMapsUrl) {
+                return googleMapsUrl;
+            }
+            const query = `${name} ${city}`;
+            return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
         }
 
         // ─── Función para mostrar farmacias ───
@@ -489,7 +494,7 @@
                         <span class="pharmacy-card__dept">${p.dept}</span>
                     </div>
                     <div class="pharmacy-card__actions">
-                        <a href="${generateGoogleMapsLink(p.name, p.address, p.city, p.dept)}" target="_blank" class="btn-maps">
+                        <a href="${generateGoogleMapsLink(p.name, p.address, p.city, p.dept, p.googleMapsUrl)}" target="_blank" class="btn-maps">
                             📍 Ver en Google Maps
                         </a>
                     </div>
