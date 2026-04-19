@@ -1488,18 +1488,16 @@ ul li::marker,
   max-width: 280px;
 }
 
-img.footer__logo {
-  height: 60px;
-  width: auto;
-  margin-bottom: var(--space-sm);
-  image-rendering: auto;
-  transform-origin: center center;
-  transition: transform 0.3s ease;
+/* Logo dans le footer - utilise la meme classe logo-pivot que la navbar */
+.footer__brand a {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
-img.footer__logo:hover {
-  animation: logoPulseRotate 2.5s ease-in-out !important;
-  filter: none !important;
+.footer__brand a img {
+  height: 60px;
+  width: auto;
+  display: block;
 }
 
 .footer__brand-name {
