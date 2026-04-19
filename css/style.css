@@ -335,7 +335,7 @@ ol {
 .hero--dark {
   background: var(--color-black);
   color: var(--color-pure-white);
-  margin-bottom: var(--space-2xl);
+  margin-bottom: 0;
 }
 
 /* Apple-style hero with full-bleed background image */
@@ -2095,6 +2095,289 @@ img.footer__logo:hover {
   margin-top: 0.75rem;
   font-size: 1.4rem;
   line-height: 1.6;
+}
+
+/* ==========================================================================
+   LISTE PHARMACIES - Recherche et résultats
+   ========================================================================== */
+
+/* Hero de recherche */
+.search-hero {
+  padding: 2rem 1.5rem 6rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.search-hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.search-hero__title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+.search-hero__highlight {
+  background: linear-gradient(90deg, #fff, #ffd700, #fff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+
+.search-hero__subtitle {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.search-hero__subtitle strong {
+  background: white;
+  color: #e91e63;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+/* Barre de recherche */
+.search-box {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.search-box__input {
+  width: 100%;
+  padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2), 0 0 0 4px rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.search-box__input:focus {
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 0 6px rgba(233, 30, 99, 0.3), inset 0 0 20px rgba(233, 30, 99, 0.1);
+}
+
+.search-box__input::placeholder {
+  color: #888;
+}
+
+.search-box__icon {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.search-box__sparkles {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.5; transform: translateY(-50%) scale(1); }
+  50% { opacity: 1; transform: translateY(-50%) scale(1.2); }
+}
+
+/* Vagues décoratives */
+.search-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 0;
+}
+
+.search-waves svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Grille des pharmacies */
+.pharmacies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.pharmacy-card {
+  background: var(--color-pure-white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1.5px solid var(--color-gray-200);
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow), border-color var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pharmacy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
+  border-color: rgba(233, 30, 99, 0.3);
+}
+
+.pharmacy-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 0.25rem;
+}
+
+.pharmacy-card__address {
+  font-size: var(--text-small);
+  color: var(--color-gray-500);
+  line-height: 1.5;
+}
+
+.pharmacy-card__city {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 0.5rem;
+}
+
+.pharmacy-card__city::before {
+  content: '📍';
+  font-size: 0.85rem;
+}
+
+.pharmacy-card__dept {
+  display: inline-block;
+  background: rgba(233, 30, 99, 0.08);
+  color: var(--color-primary);
+  border: 1px solid rgba(233, 30, 99, 0.2);
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.pharmacy-card__actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Résultats pharmacies */
+.pharmacies-results {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.results-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.btn-maps {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #5f9ea0 0%, #7fb8c7 50%, #4a8a7f 100%);
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(95, 158, 160, 0.4), inset 0 1px 0 rgba(127, 184, 199, 0.3);
+}
+
+.btn-maps:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(127, 184, 199, 0.5), inset 0 1px 0 rgba(95, 158, 160, 0.4);
+  background: linear-gradient(135deg, #7fb8c7 0%, #5f9ea0 50%, #6ba8b0 100%);
+}
+
+/* No results */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  color: var(--color-gray-500);
+}
+
+.no-results__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.no-results__title {
+  font-size: var(--text-h3);
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+}
+
+.no-results p {
+  font-size: var(--text-body);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .pharmacies-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
 }
 
 /* ==========================================================================

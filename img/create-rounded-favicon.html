@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Créer Favicon Arrondie</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        canvas { border: 1px solid #ccc; margin: 10px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Générateur de Favicon avec coins arrondis</h1>
+    <p>Clic droit sur l'image → "Enregistrer l'image sous..." pour sauvegarder</p>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <br>
+    <button onclick="downloadImage()">Télécharger Favicon Arrondie</button>
+    
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        
+        img.onload = function() {
+            // Créer le masque arrondi
+            ctx.beginPath();
+            ctx.roundRect(0, 0, 32, 32, 6); // rayon 6px
+            ctx.closePath();
+            ctx.clip();
+            
+            // Dessiner l'image
+            ctx.drawImage(img, 0, 0, 32, 32);
+        };
+        
+        img.src = 'Favicon.png';
+        
+        function downloadImage() {
+            const link = document.createElement('a');
+            link.download = 'Favicon-rounded.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
